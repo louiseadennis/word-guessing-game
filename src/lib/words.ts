@@ -1,7 +1,8 @@
-import { WORDS } from '../constants/wordlist'
+import { WORDSDICT } from '../constants/wordlist'
 import { VALIDGUESSES } from '../constants/validGuesses'
 
 export const isWordInWordList = (word: string) => {
+  const WORDS = Object.keys(WORDSDICT)
   return (
     WORDS.includes(word.toLowerCase()) ||
     VALIDGUESSES.includes(word.toLowerCase())
@@ -19,12 +20,15 @@ export const getWordOfDay = () => {
   const msInDay = 86400000
   const index = Math.floor((now - epochMs) / msInDay)
   const nextday = (index + 1) * msInDay + epochMs
+  const WORDS = Object.keys(WORDSDICT)
+  const explanations = Object.values(WORDSDICT)
 
   return {
     solution: WORDS[index % WORDS.length].toUpperCase(),
     solutionIndex: index,
     tomorrow: nextday,
+    explanation: explanations[index % WORDS.length]
   }
 }
 
-export const { solution, solutionIndex, tomorrow } = getWordOfDay()
+export const { solution, solutionIndex, tomorrow, explanation } = getWordOfDay()
