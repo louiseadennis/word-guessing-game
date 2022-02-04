@@ -141,5 +141,15 @@ export const WORDSDICT: {[key:string]:string } = {
    'malus': 'The Malus is the evil beneath the Church in The Awakening.',
    'brown': 'Peri Brown was a companion of the Fifth and Sixth Doctors.',
    'caves': 'The Caves of Androzani is a Fifth Doctor Episode.',
+   'sixth': 'The Sixth Doctor was played by Colin Baker.',
+   'colin': 'The Sixth Doctor was played by Colin Baker.',
+   'remus': 'Romulus and Remus were the twins in The Twin Dilemma.',
+   'cyron': 'The Cryons were a race in Attack of the Cybermen.',
+   'banks': 'David Banks played many Cyber Leaders in the 1980s.',
+   'varos': 'Varos is the planet in Vengeance on Varos.',
+   'stike': 'Stike is a Sontaran in The Two Doctors.',
+   'borad': 'The Borad is the villain in Timelash.',
+   'selby': 'Tony Selby played Glitz in The Mysterious Planet, The Ultimate Foe and Dragonfire.',
+   'glitz': 'Glitz is a character in The Mysterious Planet, The Ultimate Foe and Dragonfire.',
    };
 

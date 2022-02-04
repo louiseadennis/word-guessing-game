@@ -15,6 +15,7 @@ import {
   GAME_COPIED_MESSAGE,
   ABOUT_GAME_MESSAGE,
   NOT_ENOUGH_LETTERS_MESSAGE,
+  CORRECT_WORD_MESSAGE,
   WORD_NOT_FOUND_MESSAGE,
 } from './constants/strings'
 import {
@@ -207,7 +208,10 @@ function App() {
         message={WORD_NOT_FOUND_MESSAGE}
         isOpen={isWordNotFoundAlertOpen}
       />
-      <Alert message={explanation} isOpen={isGameLost} />
+      <Alert
+        message={CORRECT_WORD_MESSAGE(solution, explanation)}
+        isOpen={isGameLost}
+      />
       <Alert
         message={successAlert}
         isOpen={successAlert !== ''}
