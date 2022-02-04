@@ -3,12 +3,18 @@ import { solutionIndex } from './words'
 import { GAME_TITLE } from '../constants/strings'
 
 let maxGenLength = 196;
-let includeEmoji = 1;
 
 export const shareStatus = (guesses: string[], lost: boolean) => {
   navigator.clipboard.writeText(
     `${GAME_TITLE} ${solutionIndex} ${lost ? 'X' : guesses.length}/6\n\n` +
       generateEmojiGrid(guesses)
+  )
+}
+
+export const shareStatusText = (guesses: string[], lost: boolean) => {
+  navigator.clipboard.writeText(
+    `${GAME_TITLE} ${solutionIndex} ${lost ? 'X' : guesses.length}/6\n\n` +
+      generateGrid(guesses)
   )
 }
 
@@ -28,12 +34,27 @@ export const generateEmojiGrid = (guesses: string[]) => {
     output += line;
   });
 
-  if (includeEmoji) {
-    output += '\n';
+ output += '\n';
+ output += generateEmojiGridEmoji(guesses);
 
-      output += generateEmojiGridEmoji(guesses);
+  return output;
+}
+
+export const generateGrid = (guesses: string[]) => {
+   let output = '';
+   const descriptiveLines: string[] = [];
+   let chopAggression = 0;
+
+   while (chopAggression === 0 || descriptiveLines.join('\n').length + output.length > maxGenLength ) {
+         descriptiveLines.splice(0,descriptiveLines.length);
+	 guesses.forEach((guess) => {
+            descriptiveLines.push(describeLine(guess, descriptiveLines.length + 1, chopAggression));	         });
+         if (chopAggression++> 20) break;
   }
 
+  descriptiveLines.forEach((line) => {
+    output += line;
+  });
 
   return output;
 }
@@ -51,7 +72,7 @@ const generateEmojiGridEmoji = (guesses: string[]) => {
             case 'present':
               return '🟧'
             default:
-              return '⬜'
+              return '⬜️'
           }
         })
         .join('')
