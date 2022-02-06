@@ -161,6 +161,8 @@ const blockTypes = (status: CharStatus[]) => {
           case 'correct':
             perfectIndexes.push(visualIndex++);
             break;
+	  default:
+	    visualIndex++;
         }
      actualIndex++;
     }
