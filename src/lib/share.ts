@@ -21,13 +21,12 @@ export const shareStatusText = (guesses: string[], lost: boolean) => {
 export const generateEmojiGrid = (guesses: string[]) => {
    let output = '';
    const descriptiveLines: string[] = [];
-   let chopAggression = 0;
 
-   while (chopAggression === 0 || descriptiveLines.join('\n').length + output.length > maxGenLength ) {
+   for (let chopAggression = 0; chopAggression < 21; chopAggression++ ) {
          descriptiveLines.splice(0,descriptiveLines.length);
 	 guesses.forEach((guess) => {
             descriptiveLines.push(describeLine(guess, descriptiveLines.length + 1, chopAggression));	         });
-         if (chopAggression++> 20) break;
+	 if (descriptiveLines.join('\n').length + output.length > maxGenLength) break;
   }
 
   descriptiveLines.forEach((line) => {
@@ -43,13 +42,12 @@ export const generateEmojiGrid = (guesses: string[]) => {
 export const generateGrid = (guesses: string[]) => {
    let output = '';
    const descriptiveLines: string[] = [];
-   let chopAggression = 0;
 
-   while (chopAggression === 0 || descriptiveLines.join('\n').length + output.length > maxGenLength ) {
+   for (let chopAggression = 0; chopAggression < 21; chopAggression++ ) {
          descriptiveLines.splice(0,descriptiveLines.length);
 	 guesses.forEach((guess) => {
             descriptiveLines.push(describeLine(guess, descriptiveLines.length + 1, chopAggression));	         });
-         if (chopAggression++> 20) break;
+	 if (descriptiveLines.join('\n').length + output.length > maxGenLength) break;
   }
 
   descriptiveLines.forEach((line) => {

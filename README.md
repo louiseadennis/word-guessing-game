@@ -1,6 +1,6 @@
 Doctor Whordle
 
-This Doctor Who themed version of wordle is adapted from hanahcode's clone project of the popular word guessing game made using React, Typescript, and Tailwind.
+This Doctor Who themed version of wordle is adapted from cwackerfuss/hanahcode's clone project of the popular word guessing game made using React, Typescript, and Tailwind.
 
 _To Run Locally:_
 Clone the repository and perform the following command line actions:
