@@ -292,7 +292,7 @@ export const WORDSDICT: {[key:string]:string } = {
    'wales': 'The modern Doctor Who series was bought back by BBC Wales and is made in Cardiff.',
    'helen': 'Helen A was the villain in The Happiness Patrol.',
    'blink': 'Blink is a Tenth Doctor episode.',
-   'rebec': 'Rebec is a Thal in Planet of the Daleks.',
+   'axons': 'The Axons are the monsters in The Claws of Axos.',
    'rills': 'The Rills were aliens in Galaxy Four.',
    'danny': 'Danny Pink is Clara Oswald\'s boyfriend.',
    'altos': 'Altos is an agent of ARbitan in the Keys of Marinus.',

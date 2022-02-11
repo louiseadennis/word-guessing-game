@@ -19,6 +19,11 @@ import {
   WORD_NOT_FOUND_MESSAGE,
 } from './constants/strings'
 import {
+  MAX_WORD_LENGTH,
+  ALERT_TIME_MS,
+  REVEAL_TIME_MS,
+} from './constants/settings'
+import {
   isWordInWordList,
   isWinningWord,
   solution,
@@ -31,8 +36,6 @@ import {
 } from './lib/localStorage'
 
 import './App.css'
-
-const ALERT_TIME_MS = 5000
 
 function App() {
   const prefersDarkMode = window.matchMedia(
@@ -55,6 +58,7 @@ function App() {
       : false
   )
   const [successAlert, setSuccessAlert] = useState('')
+  const [isRevealing, setIsRevealing] = useState(false)
   const [guesses, setGuesses] = useState<string[]>(() => {
     const loaded = loadGameStateFromLocalStorage()
     if (loaded?.solution !== solution) {
@@ -118,7 +122,7 @@ function App() {
     if (isGameWon || isGameLost) {
       return
     }
-    if (!(currentGuess.length === 5)) {
+    if (!(currentGuess.length === MAX_WORD_LENGTH)) {
       setIsNotEnoughLetters(true)
       return setTimeout(() => {
         setIsNotEnoughLetters(false)
@@ -131,6 +135,13 @@ function App() {
         setIsWordNotFoundAlertOpen(false)
       }, ALERT_TIME_MS)
     }
+
+    setIsRevealing(true)
+    // turn this back off after all
+    // chars have been revealed
+    setTimeout(() => {
+      setIsRevealing(false)
+    }, REVEAL_TIME_MS * MAX_WORD_LENGTH)
 
     const winningWord = isWinningWord(currentGuess)
 
@@ -153,26 +164,35 @@ function App() {
   return (
     <div className="py-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
       <div className="flex w-80 mx-auto items-center mb-8 mt-12">
-        <h1 className="text-xl grow font-bold dark:text-white">{GAME_TITLE}</h1>
-        <SunIcon
-          className="h-6 w-6 cursor-pointer dark:stroke-white"
-          onClick={() => handleDarkMode(!isDarkMode)}
-        />
-        <InformationCircleIcon
-          className="h-6 w-6 cursor-pointer dark:stroke-white"
-          onClick={() => setIsInfoModalOpen(true)}
-        />
-        <ChartBarIcon
-          className="h-6 w-6 cursor-pointer dark:stroke-white"
-          onClick={() => setIsStatsModalOpen(true)}
-        />
+        <header>
+          <h1 className="text-xl grow font-bold dark:text-white">
+            {GAME_TITLE}
+          </h1>
+          <SunIcon
+            className="h-6 w-6 cursor-pointer dark:stroke-white"
+            onClick={() => handleDarkMode(!isDarkMode)}
+          />
+          <InformationCircleIcon
+            className="h-6 w-6 cursor-pointer dark:stroke-white"
+            onClick={() => setIsInfoModalOpen(true)}
+          />
+          <ChartBarIcon
+            className="h-6 w-6 cursor-pointer dark:stroke-white"
+            onClick={() => setIsStatsModalOpen(true)}
+          />
+        </header>
       </div>
-      <Grid guesses={guesses} currentGuess={currentGuess} />
+      <Grid
+        guesses={guesses}
+        currentGuess={currentGuess}
+        isRevealing={isRevealing}
+      />
       <Keyboard
         onChar={onChar}
         onDelete={onDelete}
         onEnter={onEnter}
         guesses={guesses}
+        isRevealing={isRevealing}
       />
       <InfoModal
         isOpen={isInfoModalOpen}
@@ -210,7 +230,7 @@ function App() {
       />
       <Alert
         message={CORRECT_WORD_MESSAGE(solution, explanation)}
-        isOpen={isGameLost}
+        isOpen={isGameLost && !isRevealing}
       />
       <Alert
         message={successAlert}
