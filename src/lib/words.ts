@@ -1,11 +1,13 @@
 import { WORDSDICT } from '../constants/wordlist'
 import { VALIDGUESSES } from '../constants/validGuesses'
+import { MOREWORDS } from '../constants/morewords'
 
 export const isWordInWordList = (word: string) => {
   const WORDS = Object.keys(WORDSDICT)
   return (
     WORDS.includes(word.toLowerCase()) ||
-    VALIDGUESSES.includes(word.toLowerCase())
+    MOREWORDS.includes(word.toLowerCase()) ||
+    VALIDGUESSES.includes(word.toLowerCase()) 
   )
 }
 
