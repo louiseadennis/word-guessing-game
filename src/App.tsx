@@ -299,6 +299,17 @@ function App() {
         isHighContrastMode={isHighContrastMode}
       />
 
+      <SettingsModal
+        isOpen={isSettingsModalOpen}
+        handleClose={() => setIsSettingsModalOpen(false)}
+        isHardMode={isHardMode}
+        handleHardMode={handleHardMode}
+        isDarkMode={isDarkMode}
+        handleDarkMode={handleDarkMode}
+        isHighContrastMode={isHighContrastMode}
+        handleHighContrastMode={handleHighContrastMode}
+      />
+
       <AlertContainer />
     </div>
   )
