@@ -18,7 +18,7 @@ export const WORDSDICT: {[key:string]:string } = {
    'steel': 'The Age of Steel is a Tenth Doctor story.',
    'grace': 'Grace Holloway was the Doctor\'s companion in the TV Movie.',
    'awsok': 'Awsok was an alias used by Tecteun who considered herself the Doctor\'s mother.',
-   'taron': 'Taron is a Thal leader in Planet of the Daleks.',
+   'clams': 'Giant Clams lurk in the sewers of the Kaled City in Genesis of the Daleks.  One of them attacks Harry.',
    'kaled': 'The Daleks are mutated Kaleds.',
    'hedin': 'Councillor Hedin is a villain in Arc of Infinity.',
    'brain': 'The Brain of Morbius is Fourth Doctor story.',

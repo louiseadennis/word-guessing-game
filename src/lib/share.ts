@@ -1,13 +1,22 @@
 import { getGuessStatuses, CharStatus } from './statuses'
 import { solutionIndex } from './words'
 import { GAME_TITLE } from '../constants/strings'
+import { MAX_CHALLENGES } from '../constants/settings'
 
 let maxGenLength = 196;
 
-export const shareStatus = (guesses: string[], lost: boolean) => {
+export const shareStatus = (
+  guesses: string[],
+  lost: boolean,
+  isHardMode: boolean,
+  isDarkMode: boolean,
+  isHighContrastMode: boolean
+) => {
   navigator.clipboard.writeText(
-    `${GAME_TITLE} ${solutionIndex} ${lost ? 'X' : guesses.length}/6\n\n` +
-      generateEmojiGrid(guesses)
+    `${GAME_TITLE} ${solutionIndex} ${
+      lost ? 'X' : guesses.length
+    }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
+      generateEmojiGrid(guesses, getEmojiTiles(isDarkMode, isHighContrastMode))
   )
 }
 
@@ -18,7 +27,7 @@ export const shareStatusText = (guesses: string[], lost: boolean) => {
   )
 }
 
-export const generateEmojiGrid = (guesses: string[]) => {
+export const generateEmojiGrid = (guesses: string[], tiles:string []) => {
    let output = '';
    const descriptiveLines: string[] = [];
 
@@ -34,7 +43,7 @@ export const generateEmojiGrid = (guesses: string[]) => {
   });
 
  output += '\n';
- output += generateEmojiGridEmoji(guesses);
+ output += generateEmojiGridEmoji(guesses, tiles);
 
   return output;
 }
@@ -57,7 +66,7 @@ export const generateGrid = (guesses: string[]) => {
   return output;
 }
 
-const generateEmojiGridEmoji = (guesses: string[]) => {
+const generateEmojiGridEmoji = (guesses: string[], tiles:string[]) => {
   return guesses
     .map((guess) => {
       const status = getGuessStatuses(guess)
@@ -66,11 +75,11 @@ const generateEmojiGridEmoji = (guesses: string[]) => {
         .map((_, i) => {
           switch (status[i]) {
             case 'correct':
-              return '🟦'
+              return tiles[0]
             case 'present':
-              return '🟧'
+              return tiles[1]
             default:
-              return '⬜️'
+              return tiles[2]
           }
         })
         .join('')
@@ -169,4 +178,12 @@ const blockTypes = (status: CharStatus[]) => {
     misplacedIndexes: misplacedIndexes,
     perfectIndexes: perfectIndexes,
   };
+}
+
+const getEmojiTiles = (isDarkMode: boolean, isHighContrastMode: boolean) => {
+  let tiles: string[] = []
+  tiles.push(isHighContrastMode ? '🟧' : '🟩')
+  tiles.push(isHighContrastMode ? '🟦' : '🟨')
+  tiles.push(isDarkMode ? '⬛' : '⬜')
+  return tiles
 }
