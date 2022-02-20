@@ -95,11 +95,14 @@ function App() {
 
   useEffect(() => {
     if (isGameWon) {
-      setSuccessAlert(explanation)
       setTimeout(() => {
-        setSuccessAlert('')
-        setIsStatsModalOpen(true)
-      }, ALERT_TIME_MS)
+        setSuccessAlert(explanation)
+
+        setTimeout(() => {
+          setSuccessAlert('')
+          setIsStatsModalOpen(true)
+        }, ALERT_TIME_MS)
+      }, REVEAL_TIME_MS * MAX_WORD_LENGTH)
     }
     if (isGameLost) {
       setTimeout(() => {
@@ -162,7 +165,7 @@ function App() {
   }
 
   return (
-    <div className="py-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div className="py-0 max-w-7xl mx-auto sm:px-6 lg:px-9">
       <div className="flex w-80 mx-auto items-center mb-8 mt-12">
         <header>
           <h1 className="text-xl grow font-bold dark:text-white">
