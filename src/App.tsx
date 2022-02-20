@@ -252,9 +252,11 @@ function App() {
   }
 
   return (
-    <div className="py-0 max-w-7xl mx-auto sm:px-6 lg:px-9">
-      <div className="flex w-80 mx-auto items-center mb-8 mt-12">
-        <h1 className="text-xl grow font-bold dark:text-white">{GAME_TITLE}</h1>
+    <div className="pt-0 pb-1 max-w-7xl mx-auto sm:px-6 lg:px-8">
+      <div className="flex pt-0 w-80 mx-auto items-center mb-2 mt-2">
+        <h1 className="text-xl pt-0 ml-2.5 grow font-bold dark:text-white">
+          {GAME_TITLE}
+        </h1>
         <InformationCircleIcon
           className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
