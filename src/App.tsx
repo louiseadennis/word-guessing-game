@@ -21,6 +21,7 @@ import {
   MAX_WORD_LENGTH,
   MAX_CHALLENGES,
   REVEAL_TIME_MS,
+  ALERT_TIME_MS,
   GAME_LOST_INFO_DELAY,
   WELCOME_INFO_MODAL_MS,
 } from './constants/settings'
@@ -82,6 +83,7 @@ function App() {
     if (loaded.guesses.length === MAX_CHALLENGES && !gameWasWon) {
       setIsGameLost(true)
       showErrorAlert(CORRECT_WORD_MESSAGE(solution, explanation), {
+        durationMs: ALERT_TIME_MS,
         persist: true,
       })
     }
@@ -154,6 +156,7 @@ function App() {
 
       showSuccessAlert(winMessage, {
         delayMs,
+        durationMs: ALERT_TIME_MS,
         onClose: () => setIsStatsModalOpen(true),
       })
     }
@@ -245,6 +248,7 @@ function App() {
         setIsGameLost(true)
         showErrorAlert(CORRECT_WORD_MESSAGE(solution, explanation), {
           persist: true,
+          durationMs: ALERT_TIME_MS,
           delayMs: REVEAL_TIME_MS * MAX_WORD_LENGTH + 1,
         })
       }
