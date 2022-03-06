@@ -17,6 +17,7 @@ export const shareStatus = (
       lost ? 'X' : guesses.length
     }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
       generateEmojiGrid(guesses, getEmojiTiles(isDarkMode, isHighContrastMode))
+      + '\n https://louiseadennis.github.io/doctor-whordle'
   )
 }
 
@@ -24,6 +25,7 @@ export const shareStatusText = (guesses: string[], lost: boolean) => {
   navigator.clipboard.writeText(
     `${GAME_TITLE} ${solutionIndex} ${lost ? 'X' : guesses.length}/6\n\n` +
       generateGrid(guesses)
+      + '\n https://louiseadennis.github.io/doctor-whordle'
   )
 }
 
