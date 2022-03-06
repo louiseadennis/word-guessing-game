@@ -1,8 +1,3 @@
-import {
-  InformationCircleIcon,
-  ChartBarIcon,
-  CogIcon,
-} from '@heroicons/react/outline'
 import { useState, useEffect } from 'react'
 import { Grid } from './components/grid/Grid'
 import { Keyboard } from './components/keyboard/Keyboard'
@@ -45,6 +40,7 @@ import { default as GraphemeSplitter } from 'grapheme-splitter'
 import './App.css'
 import { AlertContainer } from './components/alerts/AlertContainer'
 import { useAlert } from './context/AlertContext'
+import { Navbar } from './components/navbar/Navbar'
 
 function App() {
   const prefersDarkMode = window.matchMedia(
@@ -256,66 +252,56 @@ function App() {
   }
 
   return (
-    <div className="pt-0 pb-1 max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <div className="flex pt-0 w-80 mx-auto items-center mb-2 mt-2">
-        <h1 className="text-xl pt-0 ml-2.5 grow font-bold dark:text-white">
-          {GAME_TITLE}
-        </h1>
-        <InformationCircleIcon
-          className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
-          onClick={() => setIsInfoModalOpen(true)}
+    <div className="h-screen flex flex-col">
+      <Navbar
+        setIsInfoModalOpen={setIsInfoModalOpen}
+        setIsStatsModalOpen={setIsStatsModalOpen}
+        setIsSettingsModalOpen={setIsSettingsModalOpen}
+      />
+      <div className="pt-2 px-1 pb-8 md:max-w-7xl w-full mx-auto sm:px-6 lg:px-8 flex flex-col grow">
+        <div className="pb-6 grow">
+          <Grid
+            guesses={guesses}
+            currentGuess={currentGuess}
+            isRevealing={isRevealing}
+            currentRowClassName={currentRowClass}
+          />
+        </div>
+        <Keyboard
+          onChar={onChar}
+          onDelete={onDelete}
+          onEnter={onEnter}
+          guesses={guesses}
+          isRevealing={isRevealing}
         />
-        <ChartBarIcon
-          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
-          onClick={() => setIsStatsModalOpen(true)}
+        <InfoModal
+          isOpen={isInfoModalOpen}
+          handleClose={() => setIsInfoModalOpen(false)}
         />
-        <CogIcon
-          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
-          onClick={() => setIsSettingsModalOpen(true)}
+        <StatsModal
+          isOpen={isStatsModalOpen}
+          handleClose={() => setIsStatsModalOpen(false)}
+          guesses={guesses}
+          gameStats={stats}
+          isGameLost={isGameLost}
+          isGameWon={isGameWon}
+          handleShareToClipboard={() => showSuccessAlert(GAME_COPIED_MESSAGE)}
+          isHardMode={isHardMode}
+          isDarkMode={isDarkMode}
+          isHighContrastMode={isHighContrastMode}
         />
+        <SettingsModal
+          isOpen={isSettingsModalOpen}
+          handleClose={() => setIsSettingsModalOpen(false)}
+          isHardMode={isHardMode}
+          handleHardMode={handleHardMode}
+          isDarkMode={isDarkMode}
+          handleDarkMode={handleDarkMode}
+          isHighContrastMode={isHighContrastMode}
+          handleHighContrastMode={handleHighContrastMode}
+        />
+        <AlertContainer />
       </div>
-      <Grid
-        guesses={guesses}
-        currentGuess={currentGuess}
-        isRevealing={isRevealing}
-        currentRowClassName={currentRowClass}
-      />
-      <Keyboard
-        onChar={onChar}
-        onDelete={onDelete}
-        onEnter={onEnter}
-        guesses={guesses}
-        isRevealing={isRevealing}
-      />
-      <InfoModal
-        isOpen={isInfoModalOpen}
-        handleClose={() => setIsInfoModalOpen(false)}
-      />
-      <StatsModal
-        isOpen={isStatsModalOpen}
-        handleClose={() => setIsStatsModalOpen(false)}
-        guesses={guesses}
-        gameStats={stats}
-        isGameLost={isGameLost}
-        isGameWon={isGameWon}
-        handleShare={() => showSuccessAlert(GAME_COPIED_MESSAGE)}
-        isHardMode={isHardMode}
-        isDarkMode={isDarkMode}
-        isHighContrastMode={isHighContrastMode}
-      />
-
-      <SettingsModal
-        isOpen={isSettingsModalOpen}
-        handleClose={() => setIsSettingsModalOpen(false)}
-        isHardMode={isHardMode}
-        handleHardMode={handleHardMode}
-        isDarkMode={isDarkMode}
-        handleDarkMode={handleDarkMode}
-        isHighContrastMode={isHighContrastMode}
-        handleHighContrastMode={handleHighContrastMode}
-      />
-
-      <AlertContainer />
     </div>
   )
 }

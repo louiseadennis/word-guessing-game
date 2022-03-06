@@ -8,6 +8,9 @@ export const CORRECT_WORD_MESSAGE = (solution: string, explanation:string) =>
   `The word was ${solution}: ${explanation}`
 export const HARD_MODE_ALERT_MESSAGE =
   'Hard Mode can only be enabled at the start!'
+export const HARD_MODE_DESCRIPTION =
+  'Any revealed hints must be used in subsequent guesses'
+export const HIGH_CONTRAST_MODE_DESCRIPTION = 'For improved color vision'
 export const WRONG_SPOT_MESSAGE = (guess: string, position: number) =>
   `Must use ${guess} in position ${position}`
 export const NOT_CONTAINED_MESSAGE = (letter: string) =>

@@ -3,5 +3,12 @@ export const MOREWORDS = [
 'latep',
 'nails',
 'wings',
-'wimps'
+'wimps',
+'neeva',
+'tomas',
+'years',
+'hider',
+'grunt',
+'lugal',
+'janus'
 ]
