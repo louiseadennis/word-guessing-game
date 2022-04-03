@@ -9,7 +9,7 @@ const parser = new UAParser()
 const browser = parser.getBrowser()
 const device = parser.getDevice()
 
-let maxGenLength = 196;
+let maxGenLength = 147;
 
 export const shareStatus = (
   guesses: string[],
