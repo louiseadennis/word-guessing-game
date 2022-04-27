@@ -10,5 +10,6 @@ export const MOREWORDS = [
 'hider',
 'grunt',
 'lugal',
-'janus'
+'janus',
+'biroc'
 ]
