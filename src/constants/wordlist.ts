@@ -232,6 +232,7 @@ export const WORDSDICT: {[key:string]:string } = {
    'azure': 'Azure is one of the villains in Flux.',
    'jamie': 'Jamie McCrimmon was a companion of the Second Doctor.',
    'slaar': 'Slaar is an Ice Warrior who appears in The Seeds of Death.',
+   'horus': 'The Eye of Horus held Sutekh prisoner on Earth.',
    'takes': 'It Takes You Away is a Thirteenth Doctor story.',
    'lords': 'Last of the Time Lords is a Tenth Doctor story.',
    'kalid': 'Kalid is a disguise adopted by the Master in Time-Flight.',
