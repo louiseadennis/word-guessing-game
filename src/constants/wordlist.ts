@@ -280,6 +280,7 @@ export const WORDSDICT: {[key:string]:string } = {
    'waris': 'Waris Hussein was Doctor Who\'s first director.',
    'adric': 'Adric was a companion of the Fourth and Fifth Doctors.',
    'priam': 'King Priam of Troy appears in The Myth Makers.',
+   'nuton': 'The Nuton Power Complex is blown up by the Axons in the Claws of Axos.',
    'above': 'He who to Rassilon\'s Tower would go must choose above, between, below.',
    'munro': 'Rona Munro wrote Survival the final story in the original run of Doctor Who.  She is the only writer to have written for both the classic and the new series.',
    'karra': 'Karra is a Cheetah person who befriends Ace in Survival.',
