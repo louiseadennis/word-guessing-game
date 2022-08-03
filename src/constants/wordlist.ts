@@ -275,6 +275,7 @@ export const WORDSDICT: {[key:string]:string } = {
    'maaga': 'Maaga was the villainous leader of the Drahvin in Galaxy Four.',
    'quill': 'Mr Quill is a servant of the seaweed in Fury from the Deep.',
    'frost': 'Thin Ice takes place at a Frost Fair on the Thames.',
+   'gonds': 'The Gonds live on the Planet of the Gonds in The Krotons.',
    'water': 'Dark Water is a Twelfth Doctor story.',
    'wharf': 'Doomsday ends with the Battle of Canary Wharf between the Daleks and the Cybermen.',
    'waris': 'Waris Hussein was Doctor Who\'s first director.',
