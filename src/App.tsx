@@ -10,14 +10,16 @@ import {
   WORD_NOT_FOUND_MESSAGE,
   CORRECT_WORD_MESSAGE,
   HARD_MODE_ALERT_MESSAGE,
+  DISCOURAGE_INAPP_BROWSER_TEXT,
+  SHARE_FAILURE_TEXT,
 } from './constants/strings'
 import {
-  MAX_WORD_LENGTH,
   MAX_CHALLENGES,
   REVEAL_TIME_MS,
   ALERT_TIME_MS,
-  GAME_LOST_INFO_DELAY,
   WELCOME_INFO_MODAL_MS,
+  DISCOURAGE_INAPP_BROWSERS,
+  LONG_ALERT_TIME_MS,
 } from './constants/settings'
 import {
   isWordInWordList,
@@ -40,6 +42,8 @@ import './App.css'
 import { AlertContainer } from './components/alerts/AlertContainer'
 import { useAlert } from './context/AlertContext'
 import { Navbar } from './components/navbar/Navbar'
+import { isInAppBrowser } from './lib/browser'
+import { MigrateStatsModal } from './components/modals/MigrateStatsModal'
 
 function App() {
   const prefersDarkMode = window.matchMedia(
@@ -52,6 +56,7 @@ function App() {
   const [isGameWon, setIsGameWon] = useState(false)
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
   const [isStatsModalOpen, setIsStatsModalOpen] = useState(false)
+  const [isMigrateStatsModalOpen, setIsMigrateStatsModalOpen] = useState(false)
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
   const [currentRowClass, setCurrentRowClass] = useState('')
   const [isGameLost, setIsGameLost] = useState(false)
@@ -101,7 +106,16 @@ function App() {
         setIsInfoModalOpen(true)
       }, WELCOME_INFO_MODAL_MS)
     }
-  }, [])
+  })
+
+  useEffect(() => {
+    DISCOURAGE_INAPP_BROWSERS &&
+      isInAppBrowser() &&
+      showErrorAlert(DISCOURAGE_INAPP_BROWSER_TEXT, {
+        persist: false,
+        durationMs: 7000,
+      })
+  }, [showErrorAlert])
 
   useEffect(() => {
     if (isDarkMode) {
@@ -147,7 +161,10 @@ function App() {
   useEffect(() => {
     if (isGameWon) {
       const winMessage = explanation
-      const delayMs = REVEAL_TIME_MS * MAX_WORD_LENGTH
+      //      const delayMs = REVEAL_TIME_MS * MAX_WORD_LENGTH
+      //      const winMessage =
+      //        WIN_MESSAGES[Math.floor(Math.random() * WIN_MESSAGES.length)]
+      const delayMs = REVEAL_TIME_MS * solution.length
 
       showSuccessAlert(winMessage, {
         delayMs,
@@ -159,13 +176,13 @@ function App() {
     if (isGameLost) {
       setTimeout(() => {
         setIsStatsModalOpen(true)
-      }, GAME_LOST_INFO_DELAY)
+      }, (solution.length + 1) * REVEAL_TIME_MS)
     }
   }, [isGameWon, isGameLost, showSuccessAlert])
 
   const onChar = (value: string) => {
     if (
-      unicodeLength(`${currentGuess}${value}`) <= MAX_WORD_LENGTH &&
+      unicodeLength(`${currentGuess}${value}`) <= solution.length &&
       guesses.length < MAX_CHALLENGES &&
       !isGameWon
     ) {
@@ -184,7 +201,7 @@ function App() {
       return
     }
 
-    if (!(unicodeLength(currentGuess) === MAX_WORD_LENGTH)) {
+    if (!(unicodeLength(currentGuess) === solution.length)) {
       setCurrentRowClass('jiggle')
       return showErrorAlert(NOT_ENOUGH_LETTERS_MESSAGE, {
         onClose: clearCurrentRowClass,
@@ -214,19 +231,12 @@ function App() {
     // chars have been revealed
     setTimeout(() => {
       setIsRevealing(false)
-    }, REVEAL_TIME_MS * MAX_WORD_LENGTH)
-
-    setIsRevealing(true)
-    // turn this back off after all
-    // chars have been revealed
-    setTimeout(() => {
-      setIsRevealing(false)
-    }, REVEAL_TIME_MS * MAX_WORD_LENGTH)
+    }, REVEAL_TIME_MS * solution.length)
 
     const winningWord = isWinningWord(currentGuess)
 
     if (
-      unicodeLength(currentGuess) === MAX_WORD_LENGTH &&
+      unicodeLength(currentGuess) === solution.length &&
       guesses.length < MAX_CHALLENGES &&
       !isGameWon
     ) {
@@ -244,7 +254,8 @@ function App() {
         showErrorAlert(CORRECT_WORD_MESSAGE(solution, explanation), {
           persist: true,
           durationMs: ALERT_TIME_MS,
-          delayMs: REVEAL_TIME_MS * MAX_WORD_LENGTH + 1,
+          //          delayMs: REVEAL_TIME_MS * MAX_WORD_LENGTH + 1,
+          delayMs: REVEAL_TIME_MS * solution.length + 1,
         })
       }
     }
@@ -260,6 +271,7 @@ function App() {
       <div className="pt-2 px-1 pb-8 md:max-w-7xl w-full mx-auto sm:px-6 lg:px-8 flex flex-col grow">
         <div className="pb-0 grow">
           <Grid
+            solution={solution}
             guesses={guesses}
             currentGuess={currentGuess}
             isRevealing={isRevealing}
@@ -270,6 +282,7 @@ function App() {
           onChar={onChar}
           onDelete={onDelete}
           onEnter={onEnter}
+          solution={solution}
           guesses={guesses}
           isRevealing={isRevealing}
         />
@@ -280,14 +293,29 @@ function App() {
         <StatsModal
           isOpen={isStatsModalOpen}
           handleClose={() => setIsStatsModalOpen(false)}
+          solution={solution}
           guesses={guesses}
           gameStats={stats}
           isGameLost={isGameLost}
           isGameWon={isGameWon}
           handleShareToClipboard={() => showSuccessAlert(GAME_COPIED_MESSAGE)}
+          handleShareFailure={() =>
+            showErrorAlert(SHARE_FAILURE_TEXT, {
+              durationMs: LONG_ALERT_TIME_MS,
+            })
+          }
+          handleMigrateStatsButton={() => {
+            setIsStatsModalOpen(false)
+            setIsMigrateStatsModalOpen(true)
+          }}
           isHardMode={isHardMode}
           isDarkMode={isDarkMode}
           isHighContrastMode={isHighContrastMode}
+          numberOfGuessesMade={guesses.length}
+        />
+        <MigrateStatsModal
+          isOpen={isMigrateStatsModalOpen}
+          handleClose={() => setIsMigrateStatsModalOpen(false)}
         />
         <SettingsModal
           isOpen={isSettingsModalOpen}

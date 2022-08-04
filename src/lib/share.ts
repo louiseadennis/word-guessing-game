@@ -1,5 +1,5 @@
 import { getGuessStatuses, CharStatus } from './statuses'
-import { solutionIndex } from './words'
+import { solutionIndex, unicodeSplit } from './words'
 import { GAME_TITLE } from '../constants/strings'
 import { MAX_CHALLENGES } from '../constants/settings'
 import { UAParser } from 'ua-parser-js'
@@ -12,19 +12,26 @@ const device = parser.getDevice()
 let maxGenLength = 147;
 
 export const shareStatus = (
+  solution: string,
   guesses: string[],
   lost: boolean,
   isHardMode: boolean,
   isDarkMode: boolean,
   isHighContrastMode: boolean,
-  handleShareToClipboard: () => void
+  handleShareToClipboard: () => void,
+  handleShareFailure: () => void
 ) => {
   const textToShare =
     `${GAME_TITLE} ${solutionIndex} ${
       lost ? 'X' : guesses.length
     }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
-      generateEmojiGrid(guesses, getEmojiTiles(isDarkMode, isHighContrastMode))
-      + '\n https://louiseadennis.github.io/doctor-whordle'
+//     generateEmojiGrid(guesses, getEmojiTiles(isDarkMode, isHighContrastMode))
+//     + '\n https://louiseadennis.github.io/doctor-whordle'
+    generateEmojiGrid(
+      solution,
+      guesses,
+      getEmojiTiles(isDarkMode, isHighContrastMode) 
+    ) + '\n https://louiseadennis.github.io/doctor-whordle'
 
   const shareData = { text: textToShare }
 
@@ -39,14 +46,25 @@ export const shareStatus = (
     shareSuccess = false
   }
 
-  if (!shareSuccess) {
-    navigator.clipboard.writeText(textToShare)
-    handleShareToClipboard()
+  try {
+    if (!shareSuccess) {
+      if (navigator.clipboard) {
+        navigator.clipboard
+          .writeText(textToShare)
+          .then(handleShareToClipboard)
+          .catch(handleShareFailure)
+      } else {
+        handleShareFailure()
+      }
+    }
+  } catch (error) {
+    handleShareFailure()
   }
 
 }
 
 export const shareStatusText = (
+  solution: string,
   guesses: string[],
   lost: boolean,
   isHardMode: boolean,
@@ -58,7 +76,7 @@ export const shareStatusText = (
     `${GAME_TITLE} ${solutionIndex} ${
       lost ? 'X' : guesses.length
     }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
-      generateGrid(guesses)
+      generateGrid(solution, guesses)
       + '\n https://louiseadennis.github.io/doctor-whordle'
 
     const shareData = { text: textToShare }
@@ -80,14 +98,14 @@ export const shareStatusText = (
   }
 }
 
-export const generateEmojiGrid = (guesses: string[], tiles:string []) => {
+export const generateEmojiGrid = (solution:string, guesses: string[], tiles:string []) => {
    let output = '';
    const descriptiveLines: string[] = [];
 
    for (let chopAggression = 0; chopAggression < 21; chopAggression++ ) {
          descriptiveLines.splice(0,descriptiveLines.length);
 	 guesses.forEach((guess) => {
-            descriptiveLines.push(describeLine(guess, descriptiveLines.length + 1, chopAggression));	         });
+            descriptiveLines.push(describeLine(solution, guess, descriptiveLines.length + 1, chopAggression));	         });
 	 if (descriptiveLines.join('\n').length + output.length > maxGenLength) break;
   }
 
@@ -96,19 +114,19 @@ export const generateEmojiGrid = (guesses: string[], tiles:string []) => {
   });
 
  output += '\n';
- output += generateEmojiGridEmoji(guesses, tiles);
+ output += generateEmojiGridEmoji(solution, guesses, tiles);
 
   return output;
 }
 
-export const generateGrid = (guesses: string[]) => {
+export const generateGrid = (solution:string, guesses: string[]) => {
    let output = '';
    const descriptiveLines: string[] = [];
 
    for (let chopAggression = 0; chopAggression < 21; chopAggression++ ) {
          descriptiveLines.splice(0,descriptiveLines.length);
 	 guesses.forEach((guess) => {
-            descriptiveLines.push(describeLine(guess, descriptiveLines.length + 1, chopAggression));	         });
+            descriptiveLines.push(describeLine(solution, guess, descriptiveLines.length + 1, chopAggression));	         });
 	 if (descriptiveLines.join('\n').length + output.length > maxGenLength) break;
   }
 
@@ -119,12 +137,17 @@ export const generateGrid = (guesses: string[]) => {
   return output;
 }
 
-const generateEmojiGridEmoji = (guesses: string[], tiles:string[]) => {
+export const generateEmojiGridEmoji = (
+  solution: string,
+  guesses: string[],
+  tiles: string[]
+) => {
   return guesses
     .map((guess) => {
-      const status = getGuessStatuses(guess)
-      return guess
-        .split('')
+      const status = getGuessStatuses(solution, guess)
+      const splitGuess = unicodeSplit(guess)
+
+      return splitGuess
         .map((_, i) => {
           switch (status[i]) {
             case 'correct':
@@ -162,8 +185,8 @@ const describe = (indexes:number[]) => {
     })
 };
 
-const describeLine = (guess:string, num:number, chopAggression:number) => {
-  const status = getGuessStatuses(guess);
+const describeLine = (solution:string, guess:string, num:number, chopAggression:number) => {
+  const status = getGuessStatuses(solution, guess);
   const decoded = blockTypes(status);
 
   const hasPerfect = decoded.perfectIndexes.length > 0;
