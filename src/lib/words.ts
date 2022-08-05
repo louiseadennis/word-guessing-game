@@ -86,8 +86,8 @@ export const getWordOfDay = (index: number) => {
     throw new Error('Invalid index')
   }
   // February 6, 2022 Game Epoch
-  const now = Date.now()
-  const msInDay = 86400000
+//  const now = Date.now()
+//  const msInDay = 86400000
 //  const index = Math.floor((now - epochMs) / msInDay)
 //  const nextday = (index + 1) * msInDay + epochMs
   const WORDS = Object.keys(WORDSDICT)

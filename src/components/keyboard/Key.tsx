@@ -2,7 +2,6 @@ import { ReactNode } from 'react'
 import classnames from 'classnames'
 import { CharStatus } from '../../lib/statuses'
 import { REVEAL_TIME_MS } from '../../constants/settings'
-import { getStoredIsHighContrastMode } from '../../lib/localStorage'
 import { solution } from '../../lib/words'
 
 type Props = {
@@ -23,7 +22,7 @@ export const Key = ({
   isRevealing,
 }: Props) => {
   const keyDelayMs = REVEAL_TIME_MS * solution.length
-  const isHighContrast = getStoredIsHighContrastMode()
+//  const isHighContrast = getStoredIsHighContrastMode()
 
   const classes = classnames(
     'flex items-center justify-center rounded mx-0.5 text-xs font-bold cursor-pointer select-none dark:text-white',
