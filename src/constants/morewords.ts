@@ -14,5 +14,6 @@ export const MOREWORDS = [
 'biroc',
 'ollis',
 'chela',
-'dyoni'
+'dyoni',
+'jobel'
 ]

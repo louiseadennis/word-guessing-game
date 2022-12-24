@@ -64,6 +64,7 @@ Note that guesses are validated against both the length of the solution, and pre
 - Add a list of goal words in the language to [src/constants/wordlist.ts](src/constants/wordlist.ts), replacing the English words
 - Update the "Settings" modal in [src/components/modals/SettingsModal.tsx](src/components/modals/SettingsModal.tsx)
 - Update the "Info" modal in [src/components/modals/InfoModal.tsx](src/components/modals/InfoModal.tsx)
+- Update the "DatePicker" modal in [src/components/modals/DatePickerModal.tsx](src/components/modals/DatePickerModal.tsx)
 - Update the statistics migration components modal in:
   - [src/components/stats/MigrationIntro.tsx](src/components/stats/MigrationIntro.tsx)
   - [src/components/stats/EmigratePanel.tsx](src/components/stats/EmigratePanel.tsx)
@@ -71,7 +72,10 @@ Note that guesses are validated against both the length of the solution, and pre
   - [src/components/modals/MigrateStatsModal.tsx](src/components/modals/MigrateStatsModal.tsx)
 - To ensure that migration codes are unique to your application, update the Blowfish encryption key and initialization vector with random 30 character and 8 character strings in [src/constants/settings.ts](src/constants/settings.ts)
 - If the language has letters that are not present in English update the keyboard in [src/components/keyboard/Keyboard.tsx](src/components/keyboard/Keyboard.tsx)
-- If the language is written right-to-left, prepend `\u202E` (the unicode right-to-left override character) to the return statement of the inner function in `generateEmojiGrid` in [src/lib/share.ts](src/lib/share.ts)
+- If the language is written right-to-left, prepend `\u202E` (the unicode right-to-left override character) to the return statement of the inner function in `generateEmojiGrid` in
+  [src/lib/share.ts](src/lib/share.ts)
+- To enable replaying past days' games, set `ENABLE_ARCHIVED_GAMES` to `true`
+- Set `DATE_LOCALE` to a suitable locale string as defined in [date-fns](https://github.com/date-fns/date-fns/tree/main/src/locale).
 
 ### How can I add usage tracking?
 
@@ -109,10 +113,12 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Lexoula](https://lexoula.com/): Ελληνικά (Greek)
 - [Malay](https://malay-wordle.netlify.app/): Bahasa Malaysia
 - [Mondle](https://mondle.vercel.app/): Mongolian
+- [Parig](https://www.parig.xyz/): Western Armenian
 - [Parolette](https://parolette.netlify.app/): Italian
 - [Parolle.it](https://parolle.it): Italian
 - [Pashtoodle](https://pashtoodle.lingdocs.com): Pashto
 - [Persian](https://www.persian-wordle.ir/): Persian (Farsi)
+- [Persiga](https://www.persi.ga/): Portuguese
 - [Pinyin](https://www.pinyindle.com/): Pinyin (romanization system for Mandarin Chinese)
 - [Rudle](https://rudle.vercel.app): Russian
 - [Sindhal](https://hellosindh.com/sindhal): Sindhi
@@ -126,8 +132,8 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Ukrainian](https://goroh.pp.ua/games/wordle): Ukrainian
 - [Urdle](https://urdle.chaoticity.com/): Urdu
 - [Vārdulis](https://wordle.lielakeda.lv/): Latvian
+- [Wokle](https://wokle.njamed.com/): Bininj Kunwok
 - [Word-leh!](https://word-leh.com): Singlish
-- [Wordlar](http://wordlar.uz/): Uzbek
 - [Wordle (BOS)](https://elahmo.github.io/wordle/): Bosnian
 - [Wordle (Spanish)](https://wordle-es.xavier.cc): Spanish/Espanol
 - [Wordle-RO](https://wordle-ro.sirb.net/): Romanian
@@ -147,7 +153,6 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 
 ### Fun themes
 
-- ['en si lì'ur](https://tirea.learnnavi.org/wordle): Na'vi, the constructed language from James Cameron's AVATAR (2009)
 - [Airportle](https://airportle.scottscheapflights.com/): Airport Codes
 - [Anidal](https://anidal-abrarhayat.web.app/): Animals
 - [Birdle - Emojis](https://birdle.dev): Bird emojis
@@ -155,6 +160,7 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [Buildly](https://buildly.procurepro.co/): Construction themed
 - [Chipotle](https://chipotlele.herokuapp.com): Chipotle (food, items, etc.) themed
 - [Crosswordle](https://crosswordle.mekoppe.com/): Crossword mashup
+- [DALL-e-dle](https://dall-e-dle.vercel.app/): Provides a DALL-E generated image of the word as a clue
 - [Dundle](https://dundle.dunmiffcord.com/): The Office
 - [FFXIVrdle](https://ffxivrdle.com/): Final Fantasy XIV
 - [Harry Potter](https://www.harrypotterwordle.com/): Harry Potter
@@ -184,9 +190,13 @@ For mobile and wearable devices and smart TVs, sharing of results is initially a
 - [WROUD](https://www.wroud.net/): W R O U D is a simple word game that challenges people to find a six-letter word in 3 guesses from a cloud of letters.
 - [香港麻雀 糊 dle](https://hkwudle.vercel.app/): Mahjong hands under Hong Kong rules
 
+### Fun themes in other languages
+- [German Harry Potter Wordle](https://hpwordle.de)
+
 ### Math, Acronyms, Science, Tech, and more
 
 - [AI-powered](https://github.com/asirota/wordle-ai): Includes an AI component
+- [Biordle](https://biordle.grenteam.com): Biology
 - [Colordle](https://github.com/necropolina/colordle): Guess the hexadecimal color code of the background
 - [Genel](https://andrewholding.github.io/gene-wordle/): Gene symbols
 - [Jazle](https://jazle.quest/): Javascript

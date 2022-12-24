@@ -355,6 +355,7 @@ export const WORDSDICT: {[key:string]:string } = {
    'wirrn': 'The Wirrn were monsters that appeared in The Ark in Space.',
    'kroll': 'Kroll is a giant squid from The Power of Kroll.',
    'trion': 'Home planet of the Doctor\'s companion Turlough.',
+   'zodin': 'The Terrible Zodin was mentioned but never seen.',
    'white': 'The White Guardian is the anthropomorphic personification of order and good.',
    'remus': 'Romulus and Remus were the twins in The Twin Dilemma.',
    'clegg': 'Professor Clegg is an unwilling psychic in Planet of the Spiders.',
