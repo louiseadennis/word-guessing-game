@@ -2,7 +2,7 @@ import classnames from 'classnames'
 import { ReactNode } from 'react'
 
 import { REVEAL_TIME_MS } from '../../constants/settings'
-import { getStoredIsHighContrastMode } from '../../lib/localStorage'
+//import { getStoredIsHighContrastMode } from '../../lib/localStorage'
 import { CharStatus } from '../../lib/statuses'
 import { solution } from '../../lib/words'
 
