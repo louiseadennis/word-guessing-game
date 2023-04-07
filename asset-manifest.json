@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/doctor-whordle/static/css/main.e20f2ad0.css",
-    "main.js": "/doctor-whordle/static/js/main.19f8209d.js",
+    "main.css": "/doctor-whordle/static/css/main.1356cd70.css",
+    "main.js": "/doctor-whordle/static/js/main.37608854.js",
     "static/js/787.4f075002.chunk.js": "/doctor-whordle/static/js/787.4f075002.chunk.js",
     "index.html": "/doctor-whordle/index.html",
-    "main.e20f2ad0.css.map": "/doctor-whordle/static/css/main.e20f2ad0.css.map",
-    "main.19f8209d.js.map": "/doctor-whordle/static/js/main.19f8209d.js.map",
+    "main.1356cd70.css.map": "/doctor-whordle/static/css/main.1356cd70.css.map",
+    "main.37608854.js.map": "/doctor-whordle/static/js/main.37608854.js.map",
     "787.4f075002.chunk.js.map": "/doctor-whordle/static/js/787.4f075002.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e20f2ad0.css",
-    "static/js/main.19f8209d.js"
+    "static/css/main.1356cd70.css",
+    "static/js/main.37608854.js"
   ]
 }
