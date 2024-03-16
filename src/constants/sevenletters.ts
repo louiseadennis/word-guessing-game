@@ -277,6 +277,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'warmsly': 'Peter Warmsly is a character in Battlefield.',
        'mordred': 'Mordred is a villain in Battlefield.',
        'ancelyn': 'Ancelyn is a character in Battlefield.',
+       'redvers': 'Redvers Fenn-Cooper is a character in Ghost Light.',
+       'control': 'Control is the control experiment to Josiah in Ghost Light.',
+       'gabriel': 'The events of Ghost Light take place at Gabriel Chase.',
 };
 
 
