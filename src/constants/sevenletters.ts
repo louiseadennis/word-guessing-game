@@ -280,6 +280,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'redvers': 'Redvers Fenn-Cooper is a character in Ghost Light.',
        'control': 'Control is the control experiment to Josiah in Ghost Light.',
        'gabriel': 'The events of Ghost Light take place at Gabriel Chase.',
+       'shreela': 'Shreela is a character in Survival.',
 };
 
 
