@@ -211,4 +211,5 @@ export const MOREWORDS5 = [
 'lavel',
 'husak',
 'grose',
+'sneed',
 ]

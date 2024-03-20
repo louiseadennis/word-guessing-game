@@ -281,6 +281,14 @@ export const WORDSDICT7: {[key:string]:string } = {
        'control': 'Control is the control experiment to Josiah in Ghost Light.',
        'gabriel': 'The events of Ghost Light take place at Gabriel Chase.',
        'shreela': 'Shreela is a character in Survival.',
+       'balhoon': 'Moxx of Balhoon is a character in The End of the World.',
+       'raffalo': 'Raffalo is a character in The End of the World.',
+       'unquiet': 'The Unquiet Dead is a Ninth Doctor story.',
+       'redpath': 'Redpath is a character in The Unquiet Dead.',
+       'gwyneth': 'Gwyneth helps the Doctor in the Unquiet Dead.  The actress goes on to place Gwen in Torchwood.',
+       'dickens': 'Charles Dickens appears in The Unquiet Dead.',
+       'trinity': 'The newsreader Trinity Wells appears in several Doctor Who stories.',
+       'harriet': 'Harriet Jones first appears as an MP in Aliens of London/World War Three and returns as Prime Minister in The Christmas Invasion before dying in Journey\'s End.'
 };
 
 
