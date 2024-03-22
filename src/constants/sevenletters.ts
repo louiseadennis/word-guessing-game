@@ -288,7 +288,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'gwyneth': 'Gwyneth helps the Doctor in the Unquiet Dead.  The actress goes on to place Gwen in Torchwood.',
        'dickens': 'Charles Dickens appears in The Unquiet Dead.',
        'trinity': 'The newsreader Trinity Wells appears in several Doctor Who stories.',
-       'harriet': 'Harriet Jones first appears as an MP in Aliens of London/World War Three and returns as Prime Minister in The Christmas Invasion before dying in Journey\'s End.'
+       'harriet': 'Harriet Jones first appears as an MP in Aliens of London/World War Three and returns as Prime Minister in The Christmas Invasion before dying in Journey\'s End.',
+       'statten': 'Henry van Statten is the villain in Dalek.',
+       'cathica': 'Cathica saves the day in The Long Game.',
 };
 
 

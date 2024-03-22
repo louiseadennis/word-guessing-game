@@ -295,4 +295,5 @@ export const MOREWORDS = [
 'wences',
 'judson',
 'dudman',
+'maggio',
 ]
