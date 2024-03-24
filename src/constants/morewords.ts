@@ -296,4 +296,6 @@ export const MOREWORDS = [
 'judson',
 'dudman',
 'maggio',
+'strood',
+'agorax',
 ]

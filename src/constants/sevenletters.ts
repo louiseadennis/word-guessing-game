@@ -291,6 +291,11 @@ export const WORDSDICT7: {[key:string]:string } = {
        'harriet': 'Harriet Jones first appears as an MP in Aliens of London/World War Three and returns as Prime Minister in The Christmas Invasion before dying in Journey\'s End.',
        'statten': 'Henry van Statten is the villain in Dalek.',
        'cathica': 'Cathica saves the day in The Long Game.',
+       'cardiff': 'Doctor Who is filmed in Cardiff and Torchwood was set there.',
+       'crosbie': 'Crosbie is a character in Bad Wolf.',
+       'station': 'Bad Wolf and The Parting of the Ways are set on the Game Station.',
+       'parting': 'The Parting of the Ways is a Ninth Doctor episode.',
+       'rodrick': 'Rodrick is a character in Bad Wolf and The Parting of the Ways.',
 };
 
 
