@@ -298,4 +298,5 @@ export const MOREWORDS = [
 'maggio',
 'strood',
 'agorax',
+'clovis',
 ]

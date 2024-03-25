@@ -296,6 +296,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'station': 'Bad Wolf and The Parting of the Ways are set on the Game Station.',
        'parting': 'The Parting of the Ways is a Ninth Doctor episode.',
        'rodrick': 'Rodrick is a character in Bad Wolf and The Parting of the Ways.',
+       'sycorax': 'The Sycorax are the monsters in The Christmas Invasion.',
 };
 
 
