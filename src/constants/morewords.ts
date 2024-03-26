@@ -299,4 +299,8 @@ export const MOREWORDS = [
 'strood',
 'agorax',
 'clovis',
+'angelo',
+'isobel',
+'wagner',
+'deffry',
 ]
