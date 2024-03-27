@@ -215,4 +215,5 @@ export const MOREWORDS5 = [
 'nancy',
 'fitch',
 'broff',
+'moore',
 ]
