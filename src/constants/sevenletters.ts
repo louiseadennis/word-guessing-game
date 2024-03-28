@@ -298,6 +298,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'rodrick': 'Rodrick is a character in Bad Wolf and The Parting of the Ways.',
        'sycorax': 'The Sycorax are the monsters in The Christmas Invasion.',
        'reunion': 'School Reunion is a Tenth Doctor episode.',
+       'lantern': 'The Idiot\'s Lantern is a Tenth Doctor epsiode.',
+       'zachary': 'Zachary Cross Flane is a character in The Impossible Planet/The Satan Pit.',
+       'manista': 'Scooti Manista is a character in The Impossible Planet/The Satan Pit.',
 };
 
 
