@@ -301,6 +301,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'lantern': 'The Idiot\'s Lantern is a Tenth Doctor epsiode.',
        'zachary': 'Zachary Cross Flane is a character in The Impossible Planet/The Satan Pit.',
        'manista': 'Scooti Manista is a character in The Impossible Planet/The Satan Pit.',
+       'skinner': 'Mr Skinner is a character in Love & Monsters.',
 };
 
 
