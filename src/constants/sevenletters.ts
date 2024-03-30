@@ -302,6 +302,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'zachary': 'Zachary Cross Flane is a character in The Impossible Planet/The Satan Pit.',
        'manista': 'Scooti Manista is a character in The Impossible Planet/The Satan Pit.',
        'skinner': 'Mr Skinner is a character in Love & Monsters.',
+       'hartman': 'Yvonne Hartman leads Torchwood in Army of Ghosts and Doomsday.',
+       'runaway': 'The Runaway Bride is a Tenth Doctor episode.',
+       'racnoss': 'The Empress of the Racnoss is the villain in The Runaway Bride.',
 };
 
 
