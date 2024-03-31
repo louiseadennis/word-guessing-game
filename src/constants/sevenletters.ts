@@ -305,6 +305,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'hartman': 'Yvonne Hartman leads Torchwood in Army of Ghosts and Doomsday.',
        'runaway': 'The Runaway Bride is a Tenth Doctor episode.',
        'racnoss': 'The Empress of the Racnoss is the villain in The Runaway Bride.',
+       'bethlem': 'The Bethlem Hospital appears in The Shakespeare Code.',
+       'wiggins': 'Wiggins is a character in The Shakespeare Code.',
 };
 
 
