@@ -309,4 +309,5 @@ export const MOREWORDS = [
 'rhodri',
 'swales',
 'lynley',
+'whitey',
 ]

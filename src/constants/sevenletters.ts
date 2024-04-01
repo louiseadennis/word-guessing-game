@@ -307,6 +307,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'racnoss': 'The Empress of the Racnoss is the villain in The Runaway Bride.',
        'bethlem': 'The Bethlem Hospital appears in The Shakespeare Code.',
        'wiggins': 'Wiggins is a character in The Shakespeare Code.',
+       'kincade': 'Thomas Kincade Brannigan is a character in Gridlock.',
+       'calypso': 'Sally Calypso is a character in Gridlock.',
 };
 
 

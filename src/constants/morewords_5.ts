@@ -218,4 +218,7 @@ export const MOREWORDS5 = [
 'moore',
 'croot',
 'kempe',
+'cheen',
+'javit',
+'myrna',
 ]
