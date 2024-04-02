@@ -309,6 +309,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'wiggins': 'Wiggins is a character in The Shakespeare Code.',
        'kincade': 'Thomas Kincade Brannigan is a character in Gridlock.',
        'calypso': 'Sally Calypso is a character in Gridlock.',
+       'lazarus': 'The Lazarus Experiment is a Tenth Doctor Story.',
+       'vashtee': 'Riley Vashtee is a charcter in 42.',
+       'torajii': '42 is set in the Torajii system.',
 };
 
 
