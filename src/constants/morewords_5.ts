@@ -221,4 +221,5 @@ export const MOREWORDS5 = [
 'cheen',
 'javit',
 'myrna',
+'banto',
 ]

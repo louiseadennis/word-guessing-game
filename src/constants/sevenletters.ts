@@ -105,7 +105,6 @@ export const WORDSDICT7: {[key:string]:string } = {
        'quinian': 'Sir James Quinian is a character in The Ambassadors of Death.',
        'heldorf': 'Heldorf is a character in The Ambassadors of Death.',
        'inferno': 'Inferno is a third Doctor story.',
-       'latimer': 'Private Latimer is a character in Inferno.',
        'primord': 'The Primords are monsters in Inferno.',
        'rossini': 'In Terror of the Autons, the Master hides in Rossini\'s Circus.',
        'summers': 'Dr Roland Summers is played by Michael Sheard in The Mind of Evil.',
@@ -312,6 +311,11 @@ export const WORDSDICT7: {[key:string]:string } = {
        'lazarus': 'The Lazarus Experiment is a Tenth Doctor Story.',
        'vashtee': 'Riley Vashtee is a charcter in 42.',
        'torajii': '42 is set in the Torajii system.',
+       'redfern': 'Joan Redfern falls in love with the Doctor\'s human alter ego in Human Nature/The Famaily of Blood.',
+       'latimer': 'Tim Latimer holds the Doctor\'s pocket watch in Human Nature/The Family of Blood.',
+       'sparrow': 'Sally Sparrow is the protagonist in Blink.',
+       'shipton': 'Billy Shipton is a character in Blink.',
+       'weeping': 'The Weeping Angels are a monster in New Who.',
 };
 
 
