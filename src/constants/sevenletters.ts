@@ -316,6 +316,10 @@ export const WORDSDICT7: {[key:string]:string } = {
        'sparrow': 'Sally Sparrow is the protagonist in Blink.',
        'shipton': 'Billy Shipton is a character in Blink.',
        'weeping': 'The Weeping Angels are a monster in New Who.',
+       'chantho': 'Chantho is Professor Yana\'s assistant in Utopia.',
+       'kistane': 'Kistane is a character in Utopia.',
+       'valiant': 'The Valiant is the UNIT flying aircraft carrier, taken over by The Master in The Sound of Drums and Last of the Time Lords.',
+       'paradox': 'The Master builds a Paradox Machine in The Sound of Drums.',
 };
 
 

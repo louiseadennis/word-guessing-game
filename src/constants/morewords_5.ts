@@ -222,4 +222,5 @@ export const MOREWORDS5 = [
 'javit',
 'myrna',
 'banto',
+'creet',
 ]
