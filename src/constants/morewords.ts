@@ -314,4 +314,7 @@ export const MOREWORDS = [
 'lerner',
 'ashton',
 'lessak',
+'alonso',
+'morvin',
+'foster',
 ]

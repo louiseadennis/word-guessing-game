@@ -320,6 +320,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'kistane': 'Kistane is a character in Utopia.',
        'valiant': 'The Valiant is the UNIT flying aircraft carrier, taken over by The Master in The Sound of Drums and Last of the Time Lords.',
        'paradox': 'The Master builds a Paradox Machine in The Sound of Drums.',
+       'wilfred': 'Wilfred Mott is Donna\'s grandfather.',
+       'titanic': 'Voyage of the Damned takes place on the starship Titanic.',
+       'adipose': 'The Adipose are small fat creatures in Partners in Crime.',
 };
 
 

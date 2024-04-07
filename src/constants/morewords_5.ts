@@ -223,4 +223,6 @@ export const MOREWORDS5 = [
 'myrna',
 'banto',
 'creet',
+'frame',
+'slade',
 ]
