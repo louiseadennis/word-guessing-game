@@ -317,4 +317,7 @@ export const MOREWORDS = [
 'alonso',
 'morvin',
 'foster',
+'petrus',
+'solana',
+'bartle',
 ]

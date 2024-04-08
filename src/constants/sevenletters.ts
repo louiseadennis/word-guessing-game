@@ -323,6 +323,11 @@ export const WORDSDICT7: {[key:string]:string } = {
        'wilfred': 'Wilfred Mott is Donna\'s grandfather.',
        'titanic': 'Voyage of the Damned takes place on the starship Titanic.',
        'adipose': 'The Adipose are small fat creatures in Partners in Crime.',
+       'metella': 'Metalla is a character in The Fires of Pompeii.',
+       'quintus': 'Quintus is a charcter in The Fires of Pompeii.',
+       'pompeii': 'The Fires of Pompeii is a Tenth Doctor story.',
+       'thalina': 'Thalina is a character in The Fires of Pompeii.',
+       'evelina': 'Evelina is a character in The Fires of Pompeii.',
 };
 
 
