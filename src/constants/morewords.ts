@@ -320,4 +320,6 @@ export const MOREWORDS = [
 'petrus',
 'solana',
 'bartle',
+'robina',
+'agatha',
 ]

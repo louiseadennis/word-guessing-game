@@ -328,6 +328,10 @@ export const WORDSDICT7: {[key:string]:string } = {
        'pompeii': 'The Fires of Pompeii is a Tenth Doctor story.',
        'thalina': 'Thalina is a character in The Fires of Pompeii.',
        'evelina': 'Evelina is a character in The Fires of Pompeii.',
+       'unicorn': 'The Unicorn and the Wasp is a Tenth Doctor story.',
+       'greeves': 'Greeves is a character in The Unicorn and the Wasp.',
+       'silence': 'Silence in the Library is a Tenth Doctor story.',
+       'library': 'Silence in the Library is a Tenth Doctor story.',
 };
 
 
