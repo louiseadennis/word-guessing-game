@@ -332,6 +332,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'greeves': 'Greeves is a character in The Unicorn and the Wasp.',
        'silence': 'Silence in the Library is a Tenth Doctor story.',
        'library': 'Silence in the Library is a Tenth Doctor story.',
+       'magambo': 'Unit Captain Magambo appears in Turn Left and Planet of the Dead.',
 };
 
 
