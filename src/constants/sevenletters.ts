@@ -333,6 +333,11 @@ export const WORDSDICT7: {[key:string]:string } = {
        'silence': 'Silence in the Library is a Tenth Doctor story.',
        'library': 'Silence in the Library is a Tenth Doctor story.',
        'magambo': 'Unit Captain Magambo appears in Turn Left and Planet of the Dead.',
+       'sanchez': 'General Sanchez is a character in The Stolen Earth.',
+       'cascade': 'The Earth is taken to the Medusa Cascade in The Stolen Earth.',
+       'journey': 'Journey\'s End is a Tenth Doctor story.',
+       'scoones': 'Mr Scoones is a character in The Next Doctor.',
+       'jackson': 'Jackson Lake is the next Doctor.',
 };
 
 
