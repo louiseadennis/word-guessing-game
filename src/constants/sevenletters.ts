@@ -338,6 +338,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'journey': 'Journey\'s End is a Tenth Doctor story.',
        'scoones': 'Mr Scoones is a character in The Next Doctor.',
        'jackson': 'Jackson Lake is the next Doctor.',
+       'praygat': 'Praygat is a character in Planet of the Dead.',
+       'ehrlich': 'Steffi Ehrlich is a character in The Waters of Mars.',
 };
 
 

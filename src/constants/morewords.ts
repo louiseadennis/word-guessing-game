@@ -322,4 +322,7 @@ export const MOREWORDS = [
 'bartle',
 'robina',
 'agatha',
+'jenner',
+'sorvin',
+'helios',
 ]
