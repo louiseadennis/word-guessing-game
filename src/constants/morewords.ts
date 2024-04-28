@@ -325,4 +325,5 @@ export const MOREWORDS = [
 'jenner',
 'sorvin',
 'helios',
+'katusi',
 ]
