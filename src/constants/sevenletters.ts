@@ -341,6 +341,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'praygat': 'Praygat is a character in Planet of the Dead.',
        'ehrlich': 'Steffi Ehrlich is a character in The Waters of Mars.',
        'ramsden': 'Dr Ramsden is a character in The Eleventh Hour.',
+       'victory': 'Victory of the Daleks is an Eleventh Doctor story.',
 };
 
 
