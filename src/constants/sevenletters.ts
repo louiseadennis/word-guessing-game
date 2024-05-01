@@ -343,6 +343,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'ramsden': 'Dr Ramsden is a character in The Eleventh Hour.',
        'victory': 'Victory of the Daleks is an Eleventh Doctor story.',
        'rosanna': 'Rosanna Calvierri is the villain in The Vampires of Venice.',
+       'nasreen': 'Nasreen Chaudhry is a character in The Hungry Earth/Cold Blood.',
+       'ambrose': 'Ambrose is a character in The Hungry Earth/Cold Blood.',
 };
 
 

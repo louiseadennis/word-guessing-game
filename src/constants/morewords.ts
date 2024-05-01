@@ -326,4 +326,7 @@ export const MOREWORDS = [
 'sorvin',
 'helios',
 'katusi',
+'nainby',
+'poggit',
+'elliot',
 ]
