@@ -345,6 +345,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'rosanna': 'Rosanna Calvierri is the villain in The Vampires of Venice.',
        'nasreen': 'Nasreen Chaudhry is a character in The Hungry Earth/Cold Blood.',
        'ambrose': 'Ambrose is a character in The Hungry Earth/Cold Blood.',
+       'vincent': 'Vincent and the Doctor is an Eleventh Doctor story.',
 };
 
 
