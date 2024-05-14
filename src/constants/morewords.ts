@@ -329,4 +329,6 @@ export const MOREWORDS = [
 'nainby',
 'poggit',
 'elliot',
+'gachet',
+'vernet',
 ]

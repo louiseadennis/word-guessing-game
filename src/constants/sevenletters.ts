@@ -346,6 +346,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'nasreen': 'Nasreen Chaudhry is a character in The Hungry Earth/Cold Blood.',
        'ambrose': 'Ambrose is a character in The Hungry Earth/Cold Blood.',
        'vincent': 'Vincent and the Doctor is an Eleventh Doctor story.',
+       'tabetha': 'Tabetha is a character in The Big Bang.',
+       'sardick': 'Kazran Sardick is the antagonist in A Christmas Carol.',
 };
 
 
