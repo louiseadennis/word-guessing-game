@@ -331,4 +331,6 @@ export const MOREWORDS = [
 'elliot',
 'gachet',
 'vernet',
+'buzzer',
+'dicken',
 ]
