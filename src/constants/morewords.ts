@@ -333,4 +333,5 @@ export const MOREWORDS = [
 'vernet',
 'buzzer',
 'dicken',
+'manton',
 ]
