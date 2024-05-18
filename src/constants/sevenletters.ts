@@ -353,6 +353,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'florres': 'De Florres is a character in The Curse of the Black Spot.',
        'mcgrath': 'McGrath is a character in The Curse of the Black Spot.',
        'cleaves': 'Miranda Cleaves is a character in The Rebel Flesh/The Also People.',
+       'terrors': 'Night Terrors is an Eleventh Doctor story.',
+       'purcell': 'Purcell is a character in Night Terrors.',
+       'handbot': 'The Handbots appear in The Girl Who Waited.',
 };
 
 
