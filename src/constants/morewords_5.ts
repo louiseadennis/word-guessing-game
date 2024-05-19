@@ -228,4 +228,6 @@ export const MOREWORDS5 = [
 'ryder',
 'cline',
 'tommo',
+'howie',
+'alfie',
 ]

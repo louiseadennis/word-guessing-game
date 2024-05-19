@@ -356,6 +356,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'terrors': 'Night Terrors is an Eleventh Doctor story.',
        'purcell': 'Purcell is a character in Night Terrors.',
        'handbot': 'The Handbots appear in The Girl Who Waited.',
+       'complex': 'The God Complex is an Eleventh Doctor episode.',
+       'hayward': 'Lucy Hayward is a character in The God Complex.',
+       'closing': 'Closing Time is an Eleventh Doctor episode.',
 };
 
 
