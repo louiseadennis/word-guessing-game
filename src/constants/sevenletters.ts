@@ -359,6 +359,10 @@ export const WORDSDICT7: {[key:string]:string } = {
        'complex': 'The God Complex is an Eleventh Doctor episode.',
        'hayward': 'Lucy Hayward is a character in The God Complex.',
        'closing': 'Closing Time is an Eleventh Doctor episode.',
+       'wedding': 'The Wedding of River Song is an Eleventh Doctor episode.',
+       'winston': 'Winston Churchill appears in several Eleventh Doctor stories.',
+       'malokeh': 'Dr Malokeh is a character in The Wedding of River Song.',
+       
 };
 
 

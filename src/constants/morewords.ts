@@ -334,4 +334,7 @@ export const MOREWORDS = [
 'buzzer',
 'dicken',
 'manton',
+'gantok',
+'droxil',
+'billis',
 ]
