@@ -337,4 +337,6 @@ export const MOREWORDS = [
 'gantok',
 'droxil',
 'billis',
+'harvey',
+'indira',
 ]

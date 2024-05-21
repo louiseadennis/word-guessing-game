@@ -362,7 +362,10 @@ export const WORDSDICT7: {[key:string]:string } = {
        'wedding': 'The Wedding of River Song is an Eleventh Doctor episode.',
        'winston': 'Winston Churchill appears in several Eleventh Doctor stories.',
        'malokeh': 'Dr Malokeh is a character in The Wedding of River Song.',
-       
+       'karlsen': 'Darla von Karlsen is a character in Asylum of the Daleks.',
+       'riddell': 'Riddell is a big game hunter in Dinosaurs on a Spaceship.',
+       'solomon': 'Solomon is the villain in Dinosaurs on a Spaceship.',
+       'bleytal': 'Bleytal is a character in Dinosaurs on a Spaceship.',
 };
 
 
