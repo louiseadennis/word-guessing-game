@@ -366,6 +366,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'riddell': 'Riddell is a big game hunter in Dinosaurs on a Spaceship.',
        'solomon': 'Solomon is the villain in Dinosaurs on a Spaceship.',
        'bleytal': 'Bleytal is a character in Dinosaurs on a Spaceship.',
+       'dockery': 'Dockery is a character in A Town Called Mercy.',
 };
 
 
