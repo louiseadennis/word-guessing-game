@@ -368,6 +368,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'bleytal': 'Bleytal is a character in Dinosaurs on a Spaceship.',
        'dockery': 'Dockery is a character in A Town Called Mercy.',
        'snowmen': 'The Abominable Snowmen and The Snowmen are both Doctor Who stories.',
+       'akhaten': 'The Rings of Akhaten is an eleventh Doctor story.',
 };
 
 
