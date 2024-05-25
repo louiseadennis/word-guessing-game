@@ -341,4 +341,5 @@ export const MOREWORDS = [
 'indira',
 'ranjit',
 'garner',
+'onegin',
 ]
