@@ -335,7 +335,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'magambo': 'Unit Captain Magambo appears in Turn Left and Planet of the Dead.',
        'sanchez': 'General Sanchez is a character in The Stolen Earth.',
        'cascade': 'The Earth is taken to the Medusa Cascade in The Stolen Earth.',
-       'journey': 'Journey\'s End is a Tenth Doctor story.',
+       'journey': 'Journey\'s End is a Tenth Doctor story and Journey to the Centre of the Tardis is an Eleventh Doctor story.',
        'scoones': 'Mr Scoones is a character in The Next Doctor.',
        'jackson': 'Jackson Lake is the next Doctor.',
        'praygat': 'Praygat is a character in Planet of the Dead.',
@@ -370,6 +370,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'snowmen': 'The Abominable Snowmen and The Snowmen are both Doctor Who stories.',
        'akhaten': 'The Rings of Akhaten is an eleventh Doctor story.',
        'skaldak': 'Skaldak is the Ice Warrior enemy in Cold War.',
+       'crimson': 'The Crimson Horror is an Eleventh Doctor story.',
 };
 
 
