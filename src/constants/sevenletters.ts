@@ -371,6 +371,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'akhaten': 'The Rings of Akhaten is an eleventh Doctor story.',
        'skaldak': 'Skaldak is the Ice Warrior enemy in Cold War.',
        'crimson': 'The Crimson Horror is an Eleventh Doctor story.',
+       'whisper': 'The Whisper Men are the monsters in The Name of the Doctor.',
 };
 
 

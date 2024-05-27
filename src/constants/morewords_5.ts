@@ -231,4 +231,7 @@ export const MOREWORDS5 = [
 'howie',
 'alfie',
 'digby',
+'artie',
+'angie',
+'andro',
 ]
