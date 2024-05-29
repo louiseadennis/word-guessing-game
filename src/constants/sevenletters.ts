@@ -372,6 +372,11 @@ export const WORDSDICT7: {[key:string]:string } = {
        'skaldak': 'Skaldak is the Ice Warrior enemy in Cold War.',
        'crimson': 'The Crimson Horror is an Eleventh Doctor story.',
        'whisper': 'The Whisper Men are the monsters in The Name of the Doctor.',
+       'arcadia': 'Arcadia is a city on Gallifrey that fell during the Time War.',
+       'bentham': 'Lord Bentham is a character in Day of the Doctor.',
+       'curator': 'Tom Baker appears as The Curator in Day of the Doctor.',
+       'abramal': 'Abramal is a character in Time of the Doctor.',
+       'handles': 'Handles is the Doctor\'s Cyberhead.',
 };
 
 

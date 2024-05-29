@@ -424,4 +424,5 @@ export const WORDSDICT5: {[key:string]:string } = {
    'delta': 'Delta and the Bannermen is a Seventh Doctor story.',
    'enemy': 'The Enemy of the World and The Invisible Enemy are both Doctor Who stories.',
    'betan': 'The Thal woman Betan helps the Doctor in Genesis of the Daleks.',
+   'tasha': 'Tasha Lem leads the Church of the Papal Mainframe in Time of the Doctor.',
    };

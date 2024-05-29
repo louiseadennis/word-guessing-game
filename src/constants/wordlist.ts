@@ -453,6 +453,7 @@ export const WORDSDICT: {[key:string]:string } = {
    'dhawan': 'Sacha Dhawan played the Master opposite Jodie Whittaker\'s Doctor.',
    'fourth': 'The Fourth Doctor was played by Tom Baker.',
    'raston': 'The Raston Warrior Robot appears in the Five Doctors.',
+   'silent': 'The Silent are the individual members of The Silence.',
    'rutans': 'The Rutans are the enemies of the Sontarans.',
    'martha': 'Martha Jones was a companion to the tenth Doctor.',
    'oberon': 'Orcini is a Knight of Oberon in Revelation of the Daleks.',

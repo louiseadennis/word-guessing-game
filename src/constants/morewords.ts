@@ -344,4 +344,6 @@ export const MOREWORDS = [
 'onegin',
 'baalen',
 'webley',
+'atkins',
+'albero',
 ]
