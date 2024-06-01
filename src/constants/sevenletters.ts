@@ -377,6 +377,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'curator': 'Tom Baker appears as The Curator in Day of the Doctor.',
        'abramal': 'Abramal is a character in Time of the Doctor.',
        'handles': 'Handles is the Doctor\'s Cyberhead.',
+       'fleming': 'Fleming is a character in Into the Dalek.',
 };
 
 
