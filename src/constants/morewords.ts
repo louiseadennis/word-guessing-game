@@ -346,4 +346,6 @@ export const MOREWORDS = [
 'webley',
 'atkins',
 'albero',
+'quayle',
+'rupert',
 ]
