@@ -235,4 +235,5 @@ export const MOREWORDS5 = [
 'angie',
 'andro',
 'orson',
+'yashe',
 ]

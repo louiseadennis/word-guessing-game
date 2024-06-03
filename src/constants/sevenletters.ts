@@ -378,6 +378,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'abramal': 'Abramal is a character in Time of the Doctor.',
        'handles': 'Handles is the Doctor\'s Cyberhead.',
        'fleming': 'Fleming is a character in Into the Dalek.',
+       'delphox': 'Ms Delphox is Madame Karabraxos\' clone in Time Heist.',
+       'porrima': 'Mr Porrima is a character in Time Heist.',
+       'blitzer': 'The Skovox Blitzer appears in The Caretaker.',
 };
 
 
