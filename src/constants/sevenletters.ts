@@ -68,7 +68,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'schultz': 'Schultz is a character in The Tenth Planet.',
        'snowcap': 'The Tenth Planet takes place at Snowcap Base.',
        'hensell': 'Hensell is a character in The Power of the Daleks.',
-       'perkins': 'Characters called Perkins appear in The Highlanders, Fury from the Deep and The Invasion.',
+       'perkins': 'Characters called Perkins appear in The Highlanders, Fury from the Deep, The Invasion, and Mummy on the Orient Express.',
        'attwood': 'Colonel Attwood is a character in The Highlanders.',
        'meadows': 'Meadows is a character in The Faceless Ones.',
        'spencer': 'Spencer is a character in The Faceless Ones.',
@@ -381,6 +381,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'delphox': 'Ms Delphox is Madame Karabraxos\' clone in Time Heist.',
        'porrima': 'Mr Porrima is a character in Time Heist.',
        'blitzer': 'The Skovox Blitzer appears in The Caretaker.',
+       'lundvik': 'Lundvik is a character in Kill the Moon.',
+       'express': 'Mummy on the Orient Express is a Twelfth Doctor story.',
 };
 
 

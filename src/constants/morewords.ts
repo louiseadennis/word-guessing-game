@@ -348,4 +348,6 @@ export const MOREWORDS = [
 'albero',
 'quayle',
 'rupert',
+'mckean',
+'maisie',
 ]
