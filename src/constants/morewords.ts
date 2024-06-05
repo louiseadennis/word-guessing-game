@@ -350,4 +350,5 @@ export const MOREWORDS = [
 'rupert',
 'mckean',
 'maisie',
+'fenton',
 ]
