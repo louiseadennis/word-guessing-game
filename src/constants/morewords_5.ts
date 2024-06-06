@@ -237,4 +237,5 @@ export const MOREWORDS5 = [
 'orson',
 'yashe',
 'maebh',
+'shona',
 ]

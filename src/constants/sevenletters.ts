@@ -384,6 +384,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'lundvik': 'Lundvik is a character in Kill the Moon.',
        'express': 'Mummy on the Orient Express is a Twelfth Doctor story.',
        'forrest': 'PC Forrest is a character in Flatline.',
+       'steward': 'Kate Stewart is the daughter of the Brigadier.',
+       'bellows': 'Bellows is a character in Last Christmas.',
 };
 
 
