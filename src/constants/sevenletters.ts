@@ -386,6 +386,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'forrest': 'PC Forrest is a character in Flatline.',
        'steward': 'Kate Stewart is the daughter of the Brigadier.',
        'bellows': 'Bellows is a character in Last Christmas.',
+       'prentis': 'Prentis is a Tivolian undertaker in Under the Lake/Before the Flood.',
 };
 
 
