@@ -353,4 +353,7 @@ export const MOREWORDS = [
 'fenton',
 'ashley',
 'dunlop',
+'hasten',
+'jemima',
+'etoine',
 ]

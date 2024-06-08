@@ -240,4 +240,6 @@ export const MOREWORDS5 = [
 'shona',
 'kanzo',
 'moran',
+'lofty',
+'limpy',
 ]

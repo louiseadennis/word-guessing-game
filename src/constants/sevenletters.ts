@@ -387,6 +387,10 @@ export const WORDSDICT7: {[key:string]:string } = {
        'steward': 'Kate Stewart is the daughter of the Brigadier.',
        'bellows': 'Bellows is a character in Last Christmas.',
        'prentis': 'Prentis is a Tivolian undertaker in Under the Lake/Before the Flood.',
+       'ashildr': 'Ashildr first appears in The Girl Who Died and becomes an antagonist in Season 9.',
+       'nollarr': 'Nollar is a character in The Girl who Died.',
+       'clayton': 'Clayton is a character in The Woman who Lived.',
+       'leandro': 'Leandro is the villain in The Woman who Lived.',
 };
 
 
