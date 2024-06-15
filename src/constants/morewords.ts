@@ -356,4 +356,6 @@ export const MOREWORDS = [
 'hasten',
 'jemima',
 'etoine',
+'nagata',
+'chopra',
 ]

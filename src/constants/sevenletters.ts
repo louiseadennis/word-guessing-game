@@ -391,6 +391,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'nollarr': 'Nollar is a character in The Girl who Died.',
        'clayton': 'Clayton is a character in The Woman who Lived.',
        'leandro': 'Leandro is the villain in The Woman who Lived.',
+       'anahson': 'Anahson is a character in Face the Raven.',
+       'quantum': 'The epoynymous Raven in Face the Raven is a Quantum Shade.',
 };
 
 
