@@ -452,6 +452,7 @@ export const WORDSDICT: {[key:string]:string } = {
    'robots': 'The Robots of Death is a fourth Doctor story.',
    'dhawan': 'Sacha Dhawan played the Master opposite Jodie Whittaker\'s Doctor.',
    'fourth': 'The Fourth Doctor was played by Tom Baker.',
+   'wraith': 'Wraiths inhabit the catacombs on Galligrey.',
    'raston': 'The Raston Warrior Robot appears in the Five Doctors.',
    'silent': 'The Silent are the individual members of The Silence.',
    'rutans': 'The Rutans are the enemies of the Sontarans.',

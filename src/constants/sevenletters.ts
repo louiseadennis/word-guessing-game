@@ -393,6 +393,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'leandro': 'Leandro is the villain in The Woman who Lived.',
        'anahson': 'Anahson is a character in Face the Raven.',
        'quantum': 'The epoynymous Raven in Face the Raven is a Quantum Shade.',
+       'gastron': 'Gastron is a character in Hell Bent.',
+       'scratch': 'Scratch is a character in The Husbands of River Song.',
+       'halassi': 'The Halassi Androvar is the most valuable diamond in the universer and is inside the brain of King Hydroflax.',
 };
 
 
