@@ -358,4 +358,6 @@ export const MOREWORDS = [
 'etoine',
 'nagata',
 'chopra',
+'kezzia',
+'dowell',
 ]
