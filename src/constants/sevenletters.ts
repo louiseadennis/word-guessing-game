@@ -397,6 +397,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'scratch': 'Scratch is a character in The Husbands of River Song.',
        'halassi': 'The Halassi Androvar is the most valuable diamond in the universer and is inside the brain of King Hydroflax.',
        'heather': 'Heather is Bill\'s girlfriend - and also a sentient puddle.',
+       'shireen': 'Shireen is a character in Knock Knock.',
+       'dahhren': 'Dahh-Ren is a character in Oxygen.',
 };
 
 

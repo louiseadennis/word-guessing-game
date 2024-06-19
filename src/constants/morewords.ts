@@ -360,4 +360,5 @@ export const MOREWORDS = [
 'chopra',
 'kezzia',
 'dowell',
+'tasker',
 ]

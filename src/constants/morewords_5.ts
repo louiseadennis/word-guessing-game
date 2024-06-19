@@ -244,4 +244,5 @@ export const MOREWORDS5 = [
 'limpy',
 'kabel',
 'moira',
+'pavel',
 ]
