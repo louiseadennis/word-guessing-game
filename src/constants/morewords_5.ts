@@ -245,4 +245,6 @@ export const MOREWORDS5 = [
 'kabel',
 'moira',
 'pavel',
+'piero',
+'erica',
 ]

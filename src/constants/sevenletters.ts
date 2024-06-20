@@ -399,6 +399,10 @@ export const WORDSDICT7: {[key:string]:string } = {
        'heather': 'Heather is Bill\'s girlfriend - and also a sentient puddle.',
        'shireen': 'Shireen is a character in Knock Knock.',
        'dahhren': 'Dahh-Ren is a character in Oxygen.',
+       'veritas': 'Veritas is a text that causes readers to commit suicide in Extremis.',
+       'rafando': 'Rafando is a character in Extremis.',
+       'pyramid': 'The Pyramid at the End of the World is a Twelfth Doctor story.',
+       'brabbit': 'Colonel Don Brabbit is a character in The Pyramid at the End of the World.',
 };
 
 
