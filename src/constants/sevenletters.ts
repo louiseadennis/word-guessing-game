@@ -3,7 +3,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'antodus': 'Antodus is a thal in The Daleks.',
        'kristas': 'Kristas is a thal in The Daleks.',
        'chenchu': 'Chenchu is a character in Marco Polo.',
-       'empress': 'Kublai Khan fears his Empress in Marco Polo.',
+       'empress': 'Empress of Mars is a Twelfth Doctor story.',
        'marinus': 'The Keys of Marinus is a first Doctor story.',
        'arbitan': 'Arbitan is the Keeper of the Conscience of Marinus.',
        'sabetha': 'Sabetha is the daughter of Arbitan, Keeper of the Conscience of Marinus.',
@@ -403,6 +403,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'rafando': 'Rafando is a character in Extremis.',
        'pyramid': 'The Pyramid at the End of the World is a Twelfth Doctor story.',
        'brabbit': 'Colonel Don Brabbit is a character in The Pyramid at the End of the World.',
+       'jackdaw': 'Jackdaw is a character in Empress of Mars.',
 };
 
 
