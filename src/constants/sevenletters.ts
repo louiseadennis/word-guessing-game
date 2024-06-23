@@ -405,6 +405,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'brabbit': 'Colonel Don Brabbit is a character in The Pyramid at the End of the World.',
        'jackdaw': 'Jackdaw is a character in Empress of Mars.',
        'rexhill': 'Rexhill is a character in The Doctor Falls.',
+       'tzimsha': 'Tzim-Sha is the villain in The Woman who Fell to Earth and The Battle of Ranskor av Kolos.',
 };
 
 
