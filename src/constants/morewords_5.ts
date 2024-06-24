@@ -247,5 +247,8 @@ export const MOREWORDS5 = [
 'pavel',
 'piero',
 'erica',
-'vitus'
+'vitus',
+'najia',
+'hakim',
+'sonya',
 ]
