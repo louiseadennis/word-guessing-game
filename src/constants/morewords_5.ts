@@ -251,4 +251,10 @@ export const MOREWORDS5 = [
 'najia',
 'hakim',
 'sonya',
+'astos',
+'mabli',
+'ronan',
+'hasna',
+'kisar',
+'almak',
 ]
