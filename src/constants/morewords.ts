@@ -366,4 +366,5 @@ export const MOREWORDS = [
 'marcus',
 'durkas',
 'bhakti',
+'smithy',
 ]

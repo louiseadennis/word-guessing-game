@@ -407,6 +407,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'rexhill': 'Rexhill is a character in The Doctor Falls.',
        'tzimsha': 'Tzim-Sha is the villain in The Woman who Fell to Earth and The Battle of Ranskor av Kolos.',
        'umbreen': 'Yaz\'s nani is called Umbreen.',
+       'kerblam': 'Kerblam! is a Thirteenth Doctor story.',
+       'twiston': 'Willa and Old Mother Twiston are characters in The Witchfinders.',
+       'alfonso': 'Alfonso is a character in The Witchfinders.',
 };
 
 

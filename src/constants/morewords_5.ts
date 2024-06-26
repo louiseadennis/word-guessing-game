@@ -257,4 +257,7 @@ export const MOREWORDS5 = [
 'hasna',
 'kisar',
 'almak',
+'jarva',
+'becka',
+'willa',
 ]
