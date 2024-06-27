@@ -410,6 +410,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'kerblam': 'Kerblam! is a Thirteenth Doctor story.',
        'twiston': 'Willa and Old Mother Twiston are characters in The Witchfinders.',
        'alfonso': 'Alfonso is a character in The Witchfinders.',
+       'ribbons': 'Ribbons is a character in It Takes You Away.',
+       'andinio': 'Andinio is a character in The Battle of Ranskoor av Kolos.',
 };
 
 

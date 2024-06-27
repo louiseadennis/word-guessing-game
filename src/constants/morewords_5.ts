@@ -260,4 +260,7 @@ export const MOREWORDS5 = [
 'jarva',
 'becka',
 'willa',
+'hanne',
+'trine',
+'delph',
 ]
