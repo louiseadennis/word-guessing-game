@@ -412,6 +412,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'alfonso': 'Alfonso is a character in The Witchfinders.',
        'ribbons': 'Ribbons is a character in It Takes You Away.',
        'andinio': 'Andinio is a character in The Battle of Ranskoor av Kolos.',
+       'spyfall': 'Spyfall is a Thirteenth Doctor story.',
 };
 
 
