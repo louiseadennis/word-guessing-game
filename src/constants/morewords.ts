@@ -371,4 +371,6 @@ export const MOREWORDS = [
 'dinkle',
 'ramesh',
 'seesay',
+'camara',
+'jamila',
 ]

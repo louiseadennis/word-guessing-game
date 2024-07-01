@@ -389,7 +389,6 @@ export const WORDSDICT7: {[key:string]:string } = {
        'prentis': 'Prentis is a Tivolian undertaker in Under the Lake/Before the Flood.',
        'ashildr': 'Ashildr first appears in The Girl Who Died and becomes an antagonist in Season 9.',
        'nollarr': 'Nollar is a character in The Girl who Died.',
-       'clayton': 'Clayton is a character in The Woman who Lived.',
        'leandro': 'Leandro is the villain in The Woman who Lived.',
        'anahson': 'Anahson is a character in Face the Raven.',
        'quantum': 'The epoynymous Raven in Face the Raven is a Quantum Shade.',
@@ -414,6 +413,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'andinio': 'Andinio is a character in The Battle of Ranskoor av Kolos.',
        'spyfall': 'Spyfall is a Thirteenth Doctor story.',
        'skithra': 'The Skithra are the monsters in Nikola Tesla\'s Night of Terror.',
+       'clayton': 'Lee Clayton appears to be the Fugitive Doctor\'s husband at the start of Fugitive of the Judoon.',
+       'praxeus': 'Praxeus is a Thirteenth Doctor story.',
 };
 
 

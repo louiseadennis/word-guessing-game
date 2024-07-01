@@ -268,4 +268,8 @@ export const MOREWORDS5 = [
 'vilma',
 'benni',
 'sylas',
+'aramu',
+'olsen',
+'cheng',
+'velez',
 ]
