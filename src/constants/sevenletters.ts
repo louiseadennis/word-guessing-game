@@ -415,6 +415,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'skithra': 'The Skithra are the monsters in Nikola Tesla\'s Night of Terror.',
        'clayton': 'Lee Clayton appears to be the Fugitive Doctor\'s husband at the start of Fugitive of the Judoon.',
        'praxeus': 'Praxeus is a Thirteenth Doctor story.',
+       'diodati': 'The Haunting of Villa Diodati is a thirteenth Doctor story.',
+       'shelley': 'Percy Bysshe Shelley appears in the Haunting of Villa Diodati.',
 };
 
 

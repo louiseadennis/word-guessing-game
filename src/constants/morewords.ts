@@ -373,4 +373,6 @@ export const MOREWORDS = [
 'seesay',
 'camara',
 'jamila',
+'maryam',
+'aleppo',
 ]
