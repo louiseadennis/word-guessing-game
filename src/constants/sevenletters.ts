@@ -417,6 +417,11 @@ export const WORDSDICT7: {[key:string]:string } = {
        'praxeus': 'Praxeus is a Thirteenth Doctor story.',
        'diodati': 'The Haunting of Villa Diodati is a thirteenth Doctor story.',
        'shelley': 'Percy Bysshe Shelley appears in the Haunting of Villa Diodati.',
+       'sharmus': 'Ko Sharmus helps humans through the boundary in Ascension of the Cybermen and sacrifices himself to save the universe in The Timeless Children.',
+       'brendan': 'Brendan is a dream version of the Doctor in Ascension of the Cybermen.',
+       'tecteun': 'Tecteun is the Doctor\'s adoptive mother.',
+       'solpado': 'Solpado is a character in The Timeless Children.',
+       'rugazzi': 'Leo Rugazzi is a scientist working for Jack Robertson who revives the Daleks in Revolution of the Daleks.',
 };
 
 

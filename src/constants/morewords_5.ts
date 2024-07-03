@@ -272,4 +272,6 @@ export const MOREWORDS5 = [
 'olsen',
 'cheng',
 'velez',
+'ravio',
+'armen',
 ]

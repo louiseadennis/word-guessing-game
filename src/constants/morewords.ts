@@ -375,4 +375,7 @@ export const MOREWORDS = [
 'jamila',
 'maryam',
 'aleppo',
+'feekat',
+'bescot',
+'fuskle',
 ]
