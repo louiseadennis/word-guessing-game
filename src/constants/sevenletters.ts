@@ -422,6 +422,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'tecteun': 'Tecteun is the Doctor\'s adoptive mother.',
        'solpado': 'Solpado is a character in The Timeless Children.',
        'rugazzi': 'Leo Rugazzi is a scientist working for Jack Robertson who revives the Daleks in Revolution of the Daleks.',
+       'ritskaw': 'Ritskaw is a character in The Halloween Apocalypse.',
+       'seacole': 'Mary Seacole appears in War of the Sontarans.',
+       'atropos': 'The Temple of Atropos contains the Mouri on the planet time.',
 };
 
 

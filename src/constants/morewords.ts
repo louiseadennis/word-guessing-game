@@ -378,4 +378,9 @@ export const MOREWORDS = [
 'feekat',
 'bescot',
 'fuskle',
+'claire',
+'kragar',
+'sentac',
+'ktoscs',
+'wilder'
 ]

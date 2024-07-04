@@ -425,4 +425,5 @@ export const WORDSDICT5: {[key:string]:string } = {
    'enemy': 'The Enemy of the World and The Invisible Enemy are both Doctor Who stories.',
    'betan': 'The Thal woman Betan helps the Doctor in Genesis of the Daleks.',
    'tasha': 'Tasha Lem leads the Church of the Papal Mainframe in Time of the Doctor.',
+   'skaak': 'Skaak is a sontaran in War of the Sontarans.',
    };
