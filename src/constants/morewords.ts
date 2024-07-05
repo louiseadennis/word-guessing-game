@@ -382,5 +382,6 @@ export const MOREWORDS = [
 'kragar',
 'sentac',
 'ktoscs',
-'wilder'
+'wilder',
+'namaca',
 ]

@@ -425,6 +425,8 @@ export const WORDSDICT7: {[key:string]:string } = {
        'ritskaw': 'Ritskaw is a character in The Halloween Apocalypse.',
        'seacole': 'Mary Seacole appears in War of the Sontarans.',
        'atropos': 'The Temple of Atropos contains the Mouri on the planet time.',
+       'village': 'Village of the Angels is a Thirteenth Doctor story.',
+       'jericho': 'Professor Jericho assists Yaz and Dan in Flux.',
 };
 
 
