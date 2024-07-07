@@ -384,4 +384,13 @@ export const MOREWORDS = [
 'ktoscs',
 'wilder',
 'namaca',
+'denzel',
+'adjani',
+'marcel',
+'vinnie',
+'ballas',
+'radebe',
+'carson',
+'hoochy',
+'galpin',
 ]

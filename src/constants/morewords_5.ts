@@ -275,4 +275,13 @@ export const MOREWORDS5 = [
 'ravio',
 'armen',
 'diane',
+'kumar',
+'jihum',
+'halaz',
+'zreeg',
+'lowri',
+'palin',
+'marti',
+'akhim',
+'patil',
 ]
