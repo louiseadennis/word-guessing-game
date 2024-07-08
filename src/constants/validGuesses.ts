@@ -1,4 +1,4 @@
-export const VALID_GUESSES = [
+export const VALID_GUESSESR = [
 'aahing',
 'aaliis',
 'aarrgh',

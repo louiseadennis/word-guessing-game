@@ -1,4 +1,4 @@
-export const VALID_GUESSES5 = [
+export const VALID_GUESSES = [
 'aalii',
 'abaca',
 'aback',

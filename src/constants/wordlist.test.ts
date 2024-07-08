@@ -1,10 +1,10 @@
 import { fail } from 'assert'
-import { WORDSDICT } from './wordlist'
+import { WORDSDICTR } from './wordlist'
 
 // You may not want the list of solutions to be unique. In that case, disable this test
 describe('wordlist', () => {
   test('words are unique', () => {
-   const WORDS = Object.keys(WORDSDICT)
+   const WORDS = Object.keys(WORDSDICTR)
    const uniqueWords = Array.from(new Set(WORDS))
 
     expect(WORDS.length).toEqual(uniqueWords.length)

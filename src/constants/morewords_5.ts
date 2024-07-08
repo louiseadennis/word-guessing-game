@@ -1,4 +1,4 @@
-export const MOREWORDS5 = [
+export const MOREWORDS = [
 'rebec',
 'latep',
 'nails',

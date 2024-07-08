@@ -1,9 +1,9 @@
-import { WORDSDICT } from '../constants/wordlist'
-import { WORDSDICT5 } from '../constants/wordlist_5'
-import { VALID_GUESSES } from '../constants/validGuesses'
-import { VALID_GUESSES5 } from '../constants/validGuesses5'
-import { MOREWORDS } from '../constants/morewords'
-import { MOREWORDS5 } from '../constants/morewords_5'
+import { WORDSDICTR } from '../constants/wordlist'
+import { WORDSDICT } from '../constants/wordlist_5'
+import { VALID_GUESSESR } from '../constants/validGuesses'
+import { VALID_GUESSES } from '../constants/validGuesses5'
+import { MOREWORDSR } from '../constants/morewords'
+import { MOREWORDS } from '../constants/morewords_5'
 import { WRONG_SPOT_MESSAGE, NOT_CONTAINED_MESSAGE } from '../constants/strings'
 import { getGuessStatuses } from './statuses'
 import {
@@ -31,12 +31,12 @@ export const isWordInWordList = (word: string) => {
   )
 }
 
-export const isWordInWordList5 = (word: string) => {
-  const WORDS5 = Object.keys(WORDSDICT5)
+export const isWordInWordListR = (word: string) => {
+  const WORDSR = Object.keys(WORDSDICTR)
   return (
-    WORDS5.includes(word.toLowerCase()) ||
-    MOREWORDS5.includes(word.toLowerCase()) ||
-    VALID_GUESSES5.includes(word.toLowerCase()) 
+    WORDSR.includes(word.toLowerCase()) ||
+    MOREWORDSR.includes(word.toLowerCase()) ||
+    VALID_GUESSESR.includes(word.toLowerCase()) 
   )
 }
 
@@ -56,7 +56,7 @@ export const findFirstUnusedReveal = (word: string, guesses: string[]) => {
   const lettersLeftArray = new Array<string>()
   const guess = guesses[guesses.length - 1]
   const statuses = getGuessStatuses(solution, guess)
-//  const statuses5 = getGuessStatuses(solution5, guess)
+//  const statusesR = getGuessStatuses(solutionR, guess)
   const splitWord = unicodeSplit(word)
   const splitGuess = unicodeSplit(guess)
 
@@ -122,12 +122,12 @@ export const getRandomWord = (index: number) => {
   if (index < 0) {
     throw new Error('Invalid index')
   }
-  const WORDS = Object.keys(WORDSDICT5)
+  const WORDS = Object.keys(WORDSDICTR)
   return localeAwareUpperCase(WORDS[index % WORDS.length])
 }
 
 export const getRandomWordIndex = () => {
-  const WORDS = Object.keys(WORDSDICT5)
+  const WORDS = Object.keys(WORDSDICTR)
   const index = Math.floor(Math.random()*WORDS.length)
   return index
 }
@@ -137,9 +137,9 @@ export const getRandomExplanation = (index : number) => {
     throw new Error('Invalid index')
   }
 
-  const WORDS5 = Object.keys(WORDSDICT5)
-  const explanations5 = Object.values(WORDSDICT5)
-  return explanations5[index % WORDS5.length]
+  const WORDSR = Object.keys(WORDSDICTR)
+  const explanationsR= Object.values(WORDSDICTR)
+  return explanationsR[index % WORDSR.length]
 }
 
 export const getToday = () => {
@@ -186,18 +186,18 @@ export const getSolution = (gameDate: Date) => {
   const randomWordIndex = getRandomWordIndex()
   const randomWord = getRandomWord(randomWordIndex)
   const WORDS = Object.keys(WORDSDICT)
-  const WORDS5 = Object.keys(WORDSDICT5)
+  const WORDSR = Object.keys(WORDSDICTR)
   const explanations = Object.values(WORDSDICT)
-  const explanations5 = Object.values(WORDSDICT5)
+  const explanationsR = Object.values(WORDSDICTR)
   
   return {
     solution: wordOfTheDay,
-    solution5: randomWord,
+    solutionR: randomWord,
     solutionGameDate: gameDate,
     solutionIndex: index,
 //    tomorrow: nextday,
     explanation: explanations[index % WORDS.length],
-    explanation5: explanations5[randomWordIndex % WORDS5.length],
+    explanationR: explanationsR[randomWordIndex % WORDSR.length],
     tomorrow: nextGameDate.valueOf(),
   }
 }
@@ -240,5 +240,5 @@ export const getIsLatestGame = () => {
   return parsed === null || !('d' in parsed)
 }
 
-export const { solution, solution5, solutionGameDate, solutionIndex, tomorrow, explanation, explanation5 } =
+export const { solution, solutionR, solutionGameDate, solutionIndex, tomorrow, explanation, explanationR } =
   getSolution(getGameDate())

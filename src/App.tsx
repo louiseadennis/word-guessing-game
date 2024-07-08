@@ -19,13 +19,13 @@ import { Navbar } from './components/navbar/Navbar'
 import {
   ALERT_TIME_MS,
   CHALLENGES,
-  CHALLENGES5,
+  CHALLENGESR,
   DATE_LOCALE,
   DISCOURAGE_INAPP_BROWSERS,
   REVEAL_TIME_MS,
   WELCOME_INFO_MODAL_MS,
   WORDLENGTH,
-  WORDLENGTH5,
+  WORDLENGTHR,
 } from './constants/settings'
 import {
   CORRECT_WORD_MESSAGE,
@@ -49,7 +49,7 @@ import {
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
   explanation,
-  explanation5,
+  explanationR,
   findFirstUnusedReveal,
   getGameDate,
   getIsLatestGame,
@@ -58,11 +58,11 @@ import {
   getRandomWordIndex,
   isWinningWord,
   isWordInWordList,
-  isWordInWordList5,
+  isWordInWordListR,
   setGameDate,
   solution,
-  solution5,
   solutionGameDate,
+  solutionR,
   unicodeLength,
 } from './lib/words'
 
@@ -78,9 +78,9 @@ function App() {
   const [wordLength, setWordLength] = useState(WORDLENGTH)
   const [challenges, setChallenges] = useState(CHALLENGES)
   const [currentGuess, setCurrentGuess] = useState('')
-  const [currentGuess5, setCurrentGuess5] = useState('')
+  const [currentGuessR, setCurrentGuessR] = useState('')
   const [isGameWon, setIsGameWon] = useState(false)
-  const [isGameWon5, setIsGameWon5] = useState(false)
+  const [isGameWonR, setIsGameWonR] = useState(false)
   const [isRandomMode, setIsRandomMode] = useState(false)
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
   const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false)
@@ -90,9 +90,9 @@ function App() {
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
   const [currentRowClass, setCurrentRowClass] = useState('')
   const [isGameLost, setIsGameLost] = useState(false)
-  const [isGameLost5, setIsGameLost5] = useState(false)
-  const [randomSolution, setRandomSolution] = useState(solution5)
-  const [randomExplanation, setRandomExplanation] = useState(explanation5)
+  const [isGameLostR, setIsGameLostR] = useState(false)
+  const [randomSolution, setRandomSolution] = useState(solutionR)
+  const [randomExplanation, setRandomExplanation] = useState(explanationR)
   const [isDarkMode, setIsDarkMode] = useState(
     localStorage.getItem('theme')
       ? localStorage.getItem('theme') === 'dark'
@@ -134,7 +134,7 @@ function App() {
     return loaded.guesses
   })
 
-  const [guesses5, setGuesses5] = useState<string[]>(() => {
+  const [guessesR, setGuessesR] = useState<string[]>(() => {
     const loaded = loadGameStateFromLocalStorage(isLatestGame, true)
 
     const currentSolution = isRandomMode ? randomSolution : solution
@@ -142,14 +142,9 @@ function App() {
     if (loaded?.solution !== currentSolution) {
       return []
     }
-    const gameWasWon5 = loaded.guesses.includes(currentSolution)
-    // const gameWasWon = loaded.guesses5.includes(currentSolution)
+    const gameWasWonR = loaded.guesses.includes(currentSolution)
 
-    // if (!loaded.guesses5) {
-    //   return []
-    // }
-
-    if (loaded.guesses.length === challenges && !gameWasWon5) {
+    if (loaded.guesses.length === challenges && !gameWasWonR) {
       const currentExplanation = isRandomMode ? randomExplanation : explanation
       showErrorAlert(
         CORRECT_WORD_MESSAGE(currentSolution, currentExplanation),
@@ -211,14 +206,14 @@ function App() {
     const index = getRandomWordIndex()
     setRandomSolution(getRandomWord(index))
     setRandomExplanation(getRandomExplanation(index))
-    setCurrentGuess5('')
-    setIsGameLost5(false)
-    setIsGameWon5(false)
-    setGuesses5([])
+    setCurrentGuessR('')
+    setIsGameLostR(false)
+    setIsGameWonR(false)
+    setGuessesR([])
     return
   }
 
-  const isWinningWord5 = (word: string) => {
+  const isWinningWordR = (word: string) => {
     return randomSolution === word
   }
 
@@ -230,8 +225,8 @@ function App() {
     console.log(isRandom)
 
     if (isRandom) {
-      setWordLength(WORDLENGTH5)
-      setChallenges(CHALLENGES5)
+      setWordLength(WORDLENGTHR)
+      setChallenges(CHALLENGESR)
     } else {
       setWordLength(WORDLENGTH)
       setChallenges(CHALLENGES)
@@ -261,21 +256,21 @@ function App() {
     if (!isRandomMode) {
       saveGameStateToLocalStorage(
         getIsLatestGame(),
-        { guesses, solution }, // , guesses5, randomSolution },
+        { guesses, solution },
         isRandomMode
       )
     } else {
       //console.log("saving random");
-      const guesses = guesses5
+      const guesses = guessesR
       const solution = randomSolution
       saveGameStateToLocalStorage(
         getIsLatestGame(),
-        { guesses, solution }, // , guesses5, randomSolution },
+        { guesses, solution },
         isRandomMode
       )
       console.log(solution)
     }
-  }, [guesses, isRandomMode, guesses5, randomSolution]) //, guesses5, randomSolution])
+  }, [guesses, isRandomMode, guessesR, randomSolution])
 
   useEffect(() => {
     if (isGameWon && !isRandomMode) {
@@ -292,7 +287,7 @@ function App() {
         durationMs: ALERT_TIME_MS,
         onClose: () => setIsStatsModalOpen(true),
       })
-    } else if (isGameWon5 && isRandomMode) {
+    } else if (isGameWonR && isRandomMode) {
       const winMessage = randomExplanation
       const delayMs = REVEAL_TIME_MS * wordLength
 
@@ -308,13 +303,13 @@ function App() {
       setTimeout(() => {
         setIsStatsModalOpen(true)
       }, (currentSolution.length + 1) * REVEAL_TIME_MS)
-    } else if (isGameLost5) {
+    } else if (isGameLostR) {
     }
   }, [
     isGameWon,
     isGameLost,
-    isGameWon5,
-    isGameLost5,
+    isGameWonR,
+    isGameLostR,
     showSuccessAlert,
     isRandomMode,
     randomExplanation,
@@ -332,11 +327,11 @@ function App() {
       setCurrentGuess(`${currentGuess}${value}`)
     } else if (
       isRandomMode &&
-      unicodeLength(`${currentGuess5}${value}`) <= wordLength &&
-      guesses5.length < challenges &&
-      !isGameWon5
+      unicodeLength(`${currentGuessR}${value}`) <= wordLength &&
+      guessesR.length < challenges &&
+      !isGameWonR
     ) {
-      setCurrentGuess5(`${currentGuess5}${value}`)
+      setCurrentGuessR(`${currentGuessR}${value}`)
     }
   }
 
@@ -349,9 +344,9 @@ function App() {
           .join('')
       )
     } else {
-      setCurrentGuess5(
+      setCurrentGuessR(
         new GraphemeSplitter()
-          .splitGraphemes(currentGuess5)
+          .splitGraphemes(currentGuessR)
           .slice(0, -1)
           .join('')
       )
@@ -365,13 +360,13 @@ function App() {
         return
       }
     } else {
-      if (isGameWon5 || isGameLost5) {
+      if (isGameWonR || isGameLostR) {
         return
       }
     }
 
-    const cg = isRandomMode ? currentGuess5 : currentGuess
-    const guessesAll = isRandomMode ? guesses5 : guesses
+    const cg = isRandomMode ? currentGuessR : currentGuess
+    const guessesAll = isRandomMode ? guessesR : guesses
 
     if (!(unicodeLength(cg) === wordLength)) {
       setCurrentRowClass('jiggle')
@@ -381,7 +376,7 @@ function App() {
     }
 
     const inWordList = isRandomMode
-      ? isWordInWordList5(cg)
+      ? isWordInWordListR(cg)
       : isWordInWordList(cg)
     if (!inWordList) {
       setCurrentRowClass('jiggle')
@@ -409,7 +404,7 @@ function App() {
     }, REVEAL_TIME_MS * wordLength)
 
     const winningWord = isRandomMode
-      ? isWinningWord5(currentGuess5)
+      ? isWinningWordR(currentGuessR)
       : isWinningWord(currentGuess)
 
     if (
@@ -450,22 +445,19 @@ function App() {
       }
     } else if (
       isRandomMode &&
-      unicodeLength(currentGuess5) === wordLength &&
-      guesses5.length < challenges &&
-      !isGameWon5
+      unicodeLength(currentGuessR) === wordLength &&
+      guessesR.length < challenges &&
+      !isGameWonR
     ) {
-      setGuesses5([...guesses5, currentGuess5])
-      setCurrentGuess5('')
+      setGuessesR([...guessesR, currentGuessR])
+      setCurrentGuessR('')
 
       if (winningWord) {
-        return setIsGameWon5(true)
+        return setIsGameWonR(true)
       }
 
-      if (guesses5.length === CHALLENGES5 - 1) {
-        //        if (isLatestGame) {
-        //          setStats(addStatsForCompletedGame(stats, guesses5.length + 1))
-        //        }
-        setIsGameLost5(true)
+      if (guessesR.length === CHALLENGESR - 1) {
+        setIsGameLostR(true)
         const currentSolution = isRandomMode ? randomSolution : solution
         const currentExplanation = isRandomMode
           ? randomExplanation
@@ -522,21 +514,21 @@ function App() {
             onDelete={onDelete}
             onEnter={onEnter}
             solution={isRandomMode ? randomSolution : solution}
-            guesses={isRandomMode ? guesses5 : guesses}
+            guesses={isRandomMode ? guessesR : guesses}
             isRevealing={isRevealing}
           />
           <div className="flex grow flex-col justify-center pb-6 short:pb-2">
             <Grid
               solution={isRandomMode ? randomSolution : solution}
-              guesses={isRandomMode ? guesses5 : guesses}
-              currentGuess={isRandomMode ? currentGuess5 : currentGuess}
+              guesses={isRandomMode ? guessesR : guesses}
+              currentGuess={isRandomMode ? currentGuessR : currentGuess}
               isRevealing={isRevealing}
               currentRowClassName={currentRowClass}
               wordLength={wordLength}
               challenges={challenges}
             />
           </div>
-          {isRandomMode && (isGameWon5 || isGameLost5) && (
+          {isRandomMode && (isGameWonR || isGameLostR) && (
             <div className="flex flex-col justify-center pb-6 short:pb-2">
               <button
                 className="mt-2 rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:text-sm"
@@ -559,7 +551,7 @@ function App() {
             isOpen={isStatsModalOpen}
             handleClose={() => setIsStatsModalOpen(false)}
             solution={isRandomMode ? randomSolution : solution}
-            guesses={isRandomMode ? guesses5 : guesses}
+            guesses={isRandomMode ? guessesR : guesses}
             gameStats={stats}
             isLatestGame={isLatestGame}
             isGameLost={isGameLost}

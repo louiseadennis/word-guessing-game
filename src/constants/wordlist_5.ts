@@ -1,4 +1,4 @@
-export const WORDSDICT5: {[key:string]:string } = {
+export const WORDSDICT: {[key:string]:string } = {
    'shard': 'The Shard is the base of the Great Intelligence in The Bells of Saint John.',
    'anjli': 'Anjli Mohindra played Rani and the Sarah Jane Adventures and the Queen Skithra in Nikola Tesla\'s Night of Terror.',
    'harry': 'Harry Sullivan was a companion of the Fourth Doctor.',
