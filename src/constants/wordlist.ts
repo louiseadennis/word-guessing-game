@@ -481,5 +481,6 @@ export const WORDSDICTR: {[key:string]:string } = {
    'bubble': 'Dot and Bubble is a Fifteenth Doctor story.',
    'pepper': 'Lindy Pepper-Bean is the protagonist in Dot and Bubble.',
    'morris': 'Morris Gibbons is the UNIT scientific advisor in The Legend of Ruby Sunday and Empire of Death.',
+   'totter': 'In the first episode the Tardis is in Totter\'s Yard.',
    };
 
