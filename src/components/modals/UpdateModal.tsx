@@ -7,7 +7,13 @@ type Props = {
 
 export const UpdateModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="Update Message March 2024" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="Update Message July 2024" isOpen={isOpen} handleClose={handleClose}>
+      <p className="text-sm text-gray-500 dark:text-gray-300 text-left">
+        This is advance notice that we are coming to the end of the six letter word list.  After a bit of thought I have over-hauled the five letter word list and this app will be switching to five letters for the word of the day and six letters for the random word on Tuesday.  
+      </p>
+     
+      <br></br>
+        <h3>Update Message March 2024</h3>
       <p className="text-sm text-gray-500 dark:text-gray-300 text-left">
         I have received a DMCA takedown message from the New York Times, via github, for the Git repository on which this is based.  I've made some changes (e.g., to the location of the Keyboard) based on the details in the letter but whether this will convince them is anyone's guess.  If this suddenly vanishes you will know why.
       </p>
