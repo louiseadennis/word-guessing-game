@@ -7,8 +7,9 @@ type Props = {
 
 export const UpdateModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="Update Message March 2024" isOpen={isOpen} handleClose={handleClose}>
-      <p className="text-sm text-gray-500 dark:text-gray-300 text-left">
+    <BaseModal title="Update Message July 2024" isOpen={isOpen} handleClose={handleClose}>
+       <h3>Update Message March 2024</h3>
+       <p className="text-sm text-gray-500 dark:text-gray-300 text-left">
         I have received a DMCA takedown message from the New York Times, via github, for the Git repository on which this is based.  I've made some changes (e.g., to the location of the Keyboard) based on the details in the letter but whether this will convince them is anyone's guess.  If this suddenly vanishes you will know why.
       </p>
       <br></br>

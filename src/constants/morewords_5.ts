@@ -284,4 +284,5 @@ export const MOREWORDS = [
 'marti',
 'akhim',
 'patil',
+'svild',
 ]
