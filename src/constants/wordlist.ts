@@ -482,5 +482,6 @@ export const WORDSDICTR: {[key:string]:string } = {
    'pepper': 'Lindy Pepper-Bean is the protagonist in Dot and Bubble.',
    'morris': 'Morris Gibbons is the UNIT scientific advisor in The Legend of Ruby Sunday and Empire of Death.',
    'totter': 'In the first episode the Tardis is in Totter\'s Yard.',
+   'helmic': 'The Helmic Regulator controls the accuracy of flight through the vortex.',
    };
 
