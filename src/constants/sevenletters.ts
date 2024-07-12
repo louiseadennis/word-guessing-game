@@ -468,10 +468,13 @@ export const WORDSDICT7: {[key:string]:string } = {
        'spooner': 'Dennis Spooner was a script editor on Doctor Who.',
        'douglas': 'Douglas Adams was a script editor on Doctor Who.',
        'bidmead': 'Christopher H. Bidmead was a script editor on Doctor Who.',
-       'anthony': 'Anthony Read was a script editor on Doctor Who.',
+       'anthony': 'Anthony Ainley played the Master in the 1980s.',
        'cartmel': 'Andrew Cartmel was a scrip editor on Doctor Who.',
        'grainer': 'Ron Grainer composed the Doctor Who theme tune.',
        'akinola': 'Segun Akinola composed the music for Doctor Who during the thirteenth Doctor years.',
+       'delgado': 'Roger Delgado played the first Master.',
+       'beevers': 'Geoffrey Beevers played the Master in The Keeper of Traken.',
+       'roberts': 'Eric Roberts played the Master in the TV Movie.',
 };
 
 
