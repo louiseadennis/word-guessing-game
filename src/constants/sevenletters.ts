@@ -239,6 +239,11 @@ export const WORDSDICT7: {[key:string]:string } = {
        'delgado': 'Roger Delgado played the first Master.',
        'beevers': 'Geoffrey Beevers played the Master in The Keeper of Traken.',
        'roberts': 'Eric Roberts played the Master in the TV Movie.',
+       'corsair': 'The Corsair is a Time Lord mentioned in The Doctor\'s Wife.',
+       'krontep': 'King Yrcanos, who marries Peri, comes from the planet Krontep.',
+       'urbanka': 'The aliens in Four to Doomsday come from Urbanka.',
+       'usurius': 'The villain in The Sunmakers comes from Usurius.',
+       'vulpana': 'Mags in The Greatest Show in the Galaxy comes from Vulpana.',
 };
 
 export const MOREWORDS7: {[key:string]:string } = {
