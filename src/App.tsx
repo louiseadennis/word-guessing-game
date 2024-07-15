@@ -83,7 +83,7 @@ function App() {
   const [isGameWonR, setIsGameWonR] = useState(false)
   const [isRandomMode, setIsRandomMode] = useState(false)
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
-  const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(true)
+  const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false)
   const [isStatsModalOpen, setIsStatsModalOpen] = useState(false)
   const [isDatePickerModalOpen, setIsDatePickerModalOpen] = useState(false)
   const [isMigrateStatsModalOpen, setIsMigrateStatsModalOpen] = useState(false)
