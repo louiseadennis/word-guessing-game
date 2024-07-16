@@ -244,6 +244,14 @@ export const WORDSDICT7: {[key:string]:string } = {
        'urbanka': 'The aliens in Four to Doomsday come from Urbanka.',
        'usurius': 'The villain in The Sunmakers comes from Usurius.',
        'vulpana': 'Mags in The Greatest Show in the Galaxy comes from Vulpana.',
+       'aridian': 'The Aridians live on Aridius in The Chase.',
+       'primoid': 'People turn into Primoids in Inferno.',
+       'usurian': 'The Collector in The Sunmakers is a Usurian.',
+       'vampire': 'The Time Lords fought the great Vampires long ago in their history.',
+       'cleaner': 'In Paradise Towers people get taken by the Cleaners.',
+       'cheetah': 'The Cheetah People appear in Survival.',
+       'illyria': 'Illyria Seven is where Solomon purchased his robots in Dinosaurs on a Spaceship.',
+       'remnant': 'The Remnants appear in The Ghost Monument.',
 };
 
 export const MOREWORDS7: {[key:string]:string } = {
