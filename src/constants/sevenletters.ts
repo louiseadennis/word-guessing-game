@@ -12,6 +12,7 @@ export const WORDSDICT7: {[key:string]:string } = {
        'drahvin': 'The Drahvins are the villains in Galaxy 4.',
        'mission': 'Mission to the Unknown is a first Doctor story that does not feature either Doctor nor companions.',
        'unknown': 'Mission to the Unknown is a first Doctor story that does not feature either Doctor nor companions.',
+       'cutaway': 'Mission the the Unknown was also referred to as Dalek Cutaway.',
        'troilus': 'Vicki leaves Doctor Who to marry Troilus.',
        'refusis': 'In The Ark the human race journeys to the planet Refusis.',
        'clanton': 'In The Gunfighters, the Doctor, Steven and Dodo become caught up in the feud betwen the Clantons and Doc Holliday.',
@@ -207,6 +208,9 @@ export const WORDSDICT7: {[key:string]:string } = {
        'michael': 'Michael Craze played companion Ben Jackson.',
        'kingdom': 'Sara Kingdom was a companion to the first Doctor.',
        'patrick': 'Patrick Troughton played the second Doctor.',
+       'padbury': 'Wendy Padbury played companion Zoe Heriot.',
+       'watling': 'Deborah Watling played companion Victoria Waterfield.',
+       'deborah': 'Deborah Watling played companion Victoria Waterfield.',
        'manning': 'Katy Manning played companion Jo  Grant.',
        'jameson': 'Louise Jameson played companion Leela.',
        'matthew': 'Matthew Waterhouse played companion Adric.',
@@ -252,6 +256,13 @@ export const WORDSDICT7: {[key:string]:string } = {
        'cheetah': 'The Cheetah People appear in Survival.',
        'illyria': 'Illyria Seven is where Solomon purchased his robots in Dinosaurs on a Spaceship.',
        'remnant': 'The Remnants appear in The Ghost Monument.',
+       'beltane': 'The Daemons takes place at Beltane.',
+       'capitol': 'The City on Gallifrey at the centre of Time Lord society is referred to as the Capitol.',
+       'captain': 'The Captain is one of the villains in The Pirate Planet.',
+       'charged': 'Travel between E-Space and N-Space is possible through Charged Vaccuum Emboitments.',
+       'demeter': 'The Vervoids grow from Demeter Seeds.',
+       'hostile': 'The Hostile Action Displacement System (HADS) very occasionally removes the Tardis from danger.',
+       'yrcanos': 'King Yrcanos maries Peri.',
 };
 
 export const MOREWORDS7: {[key:string]:string } = {

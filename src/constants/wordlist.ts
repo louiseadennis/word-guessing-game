@@ -326,7 +326,7 @@ export const WORDSDICTR: {[key:string]:string } = {
    'dennis': 'Dennis Spooner script-edited Doctor Who.',
    'yvonne': 'Yvonne Hartman leads Torchwood in Army of Ghosts and Doomsday.',
    'sirius': 'Sirius IV is mentinoed in Frontier in Space and Sirius V in City of Death.',
-   'memory': 'In the Lie of the Land the Monks imprison those who recall that they have only been on Earth for six months for memory crimes.',
+   'memory': 'In Empire of Death, The Doctor, Ruby and Mel take refuge in a Memory Tardis.',
    'return': 'The Return of Doctor Mysterio is a twelfth Doctor story.',
    'nathan': 'John Nathan-Turner was a Doctor Who producer.',
    'tracer': 'The Tracer is used to detect segments of the Key to Time.',
@@ -483,5 +483,8 @@ export const WORDSDICTR: {[key:string]:string } = {
    'morris': 'Morris Gibbons is the UNIT scientific advisor in The Legend of Ruby Sunday and Empire of Death.',
    'totter': 'In the first episode the Tardis is in Totter\'s Yard.',
    'helmic': 'The Helmic Regulator controls the accuracy of flight through the vortex.',
+   'larvae': 'The Zarbi used Larvae guns in The Web Planet.',
+   'lurman': 'Vorg and Shirna in Carnival of Monsters are Lurmans.',
+
    };
 
