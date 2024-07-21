@@ -109,11 +109,6 @@ export const getWordOfDay = (index: number) => {
   if (index < 0) {
     throw new Error('Invalid index')
   }
-  // February 6, 2022 Game Epoch
-//  const now = Date.now()
-//  const msInDay = 86400000
-//  const index = Math.floor((now - epochMs) / msInDay)
-//  const nextday = (index + 1) * msInDay + epochMs
   const WORDS = Object.keys(WORDSDICT)
   return localeAwareUpperCase(WORDS[index % WORDS.length])
 }
@@ -195,12 +190,13 @@ export const getSolution = (gameDate: Date) => {
     solutionR: randomWord,
     solutionGameDate: gameDate,
     solutionIndex: index,
-//    tomorrow: nextday,
     explanation: explanations[index % WORDS.length],
     explanationR: explanationsR[randomWordIndex % WORDSR.length],
     tomorrow: nextGameDate.valueOf(),
+    wod_length: wordOfTheDay.length,
   }
 }
+
 
 export const getGameDate = () => {
   if (getIsLatestGame()) {
@@ -240,5 +236,5 @@ export const getIsLatestGame = () => {
   return parsed === null || !('d' in parsed)
 }
 
-export const { solution, solutionR, solutionGameDate, solutionIndex, tomorrow, explanation, explanationR } =
+export const { solution, solutionR, solutionGameDate, solutionIndex, tomorrow, explanation, explanationR, wod_length } =
   getSolution(getGameDate())

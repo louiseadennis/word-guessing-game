@@ -24,7 +24,6 @@ import {
   DISCOURAGE_INAPP_BROWSERS,
   REVEAL_TIME_MS,
   WELCOME_INFO_MODAL_MS,
-  WORDLENGTH,
   WORDLENGTHR,
 } from './constants/settings'
 import {
@@ -64,6 +63,7 @@ import {
   solutionGameDate,
   solutionR,
   unicodeLength,
+  wod_length,
 } from './lib/words'
 
 function App() {
@@ -75,7 +75,7 @@ function App() {
 
   const { showError: showErrorAlert, showSuccess: showSuccessAlert } =
     useAlert()
-  const [wordLength, setWordLength] = useState(WORDLENGTH)
+  const [wordLength, setWordLength] = useState(wod_length)
   const [challenges, setChallenges] = useState(CHALLENGES)
   const [currentGuess, setCurrentGuess] = useState('')
   const [currentGuessR, setCurrentGuessR] = useState('')
@@ -228,7 +228,7 @@ function App() {
       setWordLength(WORDLENGTHR)
       setChallenges(CHALLENGESR)
     } else {
-      setWordLength(WORDLENGTH)
+      setWordLength(wod_length)
       setChallenges(CHALLENGES)
     }
     setIsRandomMode(isRandom)
@@ -275,11 +275,6 @@ function App() {
   useEffect(() => {
     if (isGameWon && !isRandomMode) {
       const winMessage = explanation
-      //console.log('getting winmessage')
-      //console.log(winMessage)
-      //      const delayMs = REVEAL_TIME_MS * MAX_WORD_LENGTH
-      //      const winMessage =
-      //        WIN_MESSAGES[Math.floor(Math.random() * WIN_MESSAGES.length)]
       const delayMs = REVEAL_TIME_MS * wordLength
 
       showSuccessAlert(winMessage, {
@@ -438,7 +433,6 @@ function App() {
           CORRECT_WORD_MESSAGE(currentSolution, currentExplanation),
           {
             durationMs: ALERT_TIME_MS,
-            //          delayMs: REVEAL_TIME_MS * MAX_WORD_LENGTH + 1,
             delayMs: REVEAL_TIME_MS * wordLength + 1,
           }
         )
