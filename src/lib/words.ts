@@ -1,5 +1,5 @@
-import { WORDSDICTR } from '../constants/wordlist'
-import { WORDSDICT } from '../constants/wordlist_5'
+import { WORDSDICTR } from '../constants/sevenletters'
+import { WORDSDICT } from '../constants/mixedwordlist'
 import { VALID_GUESSESR } from '../constants/validGuesses'
 import { VALID_GUESSES } from '../constants/validGuesses5'
 import { MOREWORDSR } from '../constants/morewords'
