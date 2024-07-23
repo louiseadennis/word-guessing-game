@@ -1,6 +1,6 @@
 import { WORDSDICTR } from '../constants/sevenletters'
 import { WORDSDICT } from '../constants/mixedwordlist'
-import { VALID_GUESSESR } from '../constants/validGuesses'
+import { VALID_GUESSESR } from '../constants/validGuesses7'
 import { VALID_GUESSES } from '../constants/validGuesses5'
 import { MOREWORDSR } from '../constants/morewords'
 import { MOREWORDS } from '../constants/morewords_5'
