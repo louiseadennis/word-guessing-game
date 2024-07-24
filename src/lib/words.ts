@@ -1,9 +1,9 @@
 import { WORDSDICTR } from '../constants/sevenletters'
 import { WORDSDICT } from '../constants/mixedwordlist'
 import { VALID_GUESSESR } from '../constants/validGuesses7'
-import { VALID_GUESSES } from '../constants/validGuesses5'
-import { MOREWORDSR } from '../constants/morewords'
-import { MOREWORDS } from '../constants/morewords_5'
+import { VALID_GUESSES } from '../constants/validGuesses56'
+import { MOREWORDSR } from '../constants/morewords_7'
+import { MOREWORDS } from '../constants/morewords56'
 import { WRONG_SPOT_MESSAGE, NOT_CONTAINED_MESSAGE } from '../constants/strings'
 import { getGuessStatuses } from './statuses'
 import {
@@ -26,7 +26,7 @@ export const isWordInWordList = (word: string) => {
   const WORDS = Object.keys(WORDSDICT)
   return (
     WORDS.includes(word.toLowerCase()) ||
-    MOREWORDS.includes(word.toLowerCase()) ||
+    MOREWORDS[<any>word.toLowerCase()] !== undefined ||
     VALID_GUESSES.includes(word.toLowerCase()) 
   )
 }
@@ -35,7 +35,7 @@ export const isWordInWordListR = (word: string) => {
   const WORDSR = Object.keys(WORDSDICTR)
   return (
     WORDSR.includes(word.toLowerCase()) ||
-    MOREWORDSR.includes(word.toLowerCase()) ||
+    MOREWORDSR[<any>word.toLowerCase()] !== undefined ||
     VALID_GUESSESR.includes(word.toLowerCase()) 
   )
 }
