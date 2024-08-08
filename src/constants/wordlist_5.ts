@@ -168,6 +168,7 @@ export const WORDSDICT: {[key:string]:string } = {
    'rills': 'The Rills were aliens in Galaxy Four.',
    'enemy': 'The Enemy of the World and The Invisible Enemy are both Doctor Who stories.',
    'under': 'Under the Lake is a Twelfth Doctor story.',
+   'bowie': 'Bowie Base One is the Mars base in Waters of Mars.',
    'innes': 'Innes Lloyd was a Doctor Who producer.',
    'pearl': 'Pearl Mackie played companion Bill Potts.',
    'xeron': 'The Tardis visits the planet Xeros in The Space Museum and helps the Xerons gain freedom from the oppressive Moroks.',
