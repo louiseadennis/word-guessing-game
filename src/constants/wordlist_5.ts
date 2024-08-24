@@ -238,6 +238,7 @@ export const WORDSDICT: {[key:string]:string } = {
    'condo': 'Condo was Solon\'s Henchman in The Brain of Morbius.',
    'wotan': 'WOTAN was an evil computer that appeared in The War Machines.',
    'remus': 'Romulus and Remus were the twins in The Twin Dilemma.',
+   'zingo': 'A Zingo is a thing you get a lift off - according to Mel.',
    'clent': 'Leader Clent runs the Britanicus Base in the Ice Warriors.',
    'engin': 'Co-ordinator Engin is in charge of the Matrix in The Deadly Assassin.',
    'tasha': 'Tasha Lem leads the Church of the Papal Mainframe in Time of the Doctor.',
