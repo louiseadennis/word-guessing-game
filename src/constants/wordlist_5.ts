@@ -74,7 +74,7 @@ export const WORDSDICT: {[key:string]:string } = {
    'trion': 'Home planet of the Doctor\'s companion Turlough.',
    'roman': 'The Romans is a First Doctor story.',
    'azure': 'Azure is one of the villains in Flux.',
-   'triad': 'Susan Twist playse Susan Triad in The Legend of Ruby Sunday and The Empire of Death.',
+   'triad': 'Susan Twist played Susan Triad in The Legend of Ruby Sunday and The Empire of Death.',
    'brian': 'There have been several Brians associated with Doctor Who included Brian Hayles who created the Ice Warriors and executive producer Brian Minchin.',
    'fires': 'The Fires of Pompei is a Tenth Doctor story.',
    'capel': 'Taren Capel is the villain in The Robots of Death',
