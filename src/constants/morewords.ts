@@ -393,4 +393,7 @@ export const MOREWORDSR = [
 'carson',
 'hoochy',
 'galpin',
+'norgay',
+'edmund',
+'norway',
 ]

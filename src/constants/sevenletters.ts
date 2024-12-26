@@ -502,6 +502,11 @@ export const MOREWORDS7: {[key:string]:string } = {
        'darrius': 'Darrius is a character in The Keys of Marinus.',
        'webster': 'Webster is a character in The Reign of Terror',
        'rouvray': 'Rouvray is a character in The Reign of Terror',
+       'almondo': 'Joy Almondo is a pseudo-companion in Joy to the World.',
+       'tenzing': 'Tenzing Norgay appears in Joy to the World.',
+       'hillary': 'Edmund Hillary appears in Joy to the World.',
+       'belinda': 'Belinda Chandra is a companion of the Fifteenth Doctor.',
+       'chandra': 'Belinda Chandra is a companion of the Fifteenth Doctor.',
 };
 
 
